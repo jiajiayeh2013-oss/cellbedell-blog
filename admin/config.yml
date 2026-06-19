@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: zh_Hant
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "posts"
+    label: "文章"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "posts/{{slug}}.html"
+    fields:
+      - { label: "狀態", name: "status", widget: "select", options: ["Idea", "Drafting", "Review", "Ready", "Published", "Archived"], default: "Drafting" }
+      - { label: "發布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "系列", name: "series", widget: "select", options: ["VivaTech / 科技展觀察", "國際科技媒體觀察", "旅館生活科技", "AI 與人文", "時尚與生活"] }
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "副標", name: "subtitle", widget: "text", required: false }
+      - { label: "作者", name: "author", widget: "string", default: "Cellbedell" }
+      - { label: "標籤", name: "tags", widget: "list", required: false }
+      - { label: "主圖", name: "hero_image", widget: "image", required: false }
+      - { label: "圖片來源", name: "hero_image_credit", widget: "string", required: false }
+      - { label: "摘要", name: "summary", widget: "text" }
+      - { label: "下一篇延伸方向", name: "next_direction", widget: "string", required: false }
+      - label: "參考來源"
+        name: "sources"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "名稱", name: "title", widget: "string" }
+          - { label: "連結", name: "url", widget: "string" }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "series"
+    label: "系列頁"
+    files:
+      - label: "VivaTech / 科技展觀察"
+        name: "vivatech"
+        file: "content/series/vivatech-2026.md"
+        fields:
+          - { label: "標題", name: "title", widget: "string" }
+          - { label: "副標", name: "subtitle", widget: "text" }
+          - { label: "讀者承諾", name: "reader_promise", widget: "text" }
+          - { label: "狀態", name: "status", widget: "select", options: ["Active", "Ready", "Paused"], default: "Active" }
+      - label: "國際科技媒體觀察"
+        name: "media_lens"
+        file: "content/series/media-lens.md"
+        fields:
+          - { label: "標題", name: "title", widget: "string" }
+          - { label: "副標", name: "subtitle", widget: "text" }
+          - { label: "讀者承諾", name: "reader_promise", widget: "text" }
+          - { label: "狀態", name: "status", widget: "select", options: ["Active", "Ready", "Paused"], default: "Ready" }
+      - label: "旅館生活科技"
+        name: "hotel_tech"
+        file: "content/series/hotel-tech.md"
+        fields:
+          - { label: "標題", name: "title", widget: "string" }
+          - { label: "副標", name: "subtitle", widget: "text" }
+          - { label: "讀者承諾", name: "reader_promise", widget: "text" }
+          - { label: "狀態", name: "status", widget: "select", options: ["Active", "Ready", "Paused"], default: "Ready" }
+      - label: "AI 與人文"
+        name: "ai_humanities"
+        file: "content/series/ai-humanities.md"
+        fields:
+          - { label: "標題", name: "title", widget: "string" }
+          - { label: "副標", name: "subtitle", widget: "text" }
+          - { label: "讀者承諾", name: "reader_promise", widget: "text" }
+          - { label: "狀態", name: "status", widget: "select", options: ["Active", "Ready", "Paused"], default: "Ready" }
+      - label: "時尚與生活"
+        name: "style_life"
+        file: "content/series/style-life.md"
+        fields:
+          - { label: "標題", name: "title", widget: "string" }
+          - { label: "副標", name: "subtitle", widget: "text" }
+          - { label: "讀者承諾", name: "reader_promise", widget: "text" }
+          - { label: "狀態", name: "status", widget: "select", options: ["Active", "Ready", "Paused"], default: "Ready" }
