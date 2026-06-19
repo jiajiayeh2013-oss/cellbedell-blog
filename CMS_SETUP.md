@@ -31,6 +31,7 @@ https://github.com/jiajiayeh2013-oss/cellbedell-blog
 6. Git Gateway 已啟用。
 7. 管理者邀請已送出。
 8. `/admin/` 已可正常載入 Decap CMS 登入畫面。
+9. 首頁已載入 Netlify Identity widget，可處理邀請信中的 `invite_token` 並導向 `/admin/`。
 
 目前 Netlify site 狀態：
 
