@@ -40,10 +40,17 @@ https://github.com/jiajiayeh2013-oss/cellbedell-blog
 - 最新 production deploy 已由 GitHub commit 觸發。
 - `identity_instance_id` 已存在，代表 Netlify Identity 已啟用。
 
-## 重要限制
+## Markdown 自動產生 HTML
 
-Decap CMS 會把文章存成 `content/posts/*.md`。目前網站仍以既有 HTML 頁面為主，下一步需要新增 build script，將 Markdown 文章自動轉成 `posts/*.html`，並更新首頁與系列頁。
+Decap CMS 會把文章存成 `content/posts/*.md`。目前已加入 `scripts/build-site.mjs`，Netlify build 時會執行 `npm run build`，並自動完成：
+
+1. 讀取 `content/posts/*.md` 中狀態為 `Ready` 或 `Published` 的文章。
+2. 產生對應的 `posts/*.html` 靜態文章頁。
+3. 更新首頁最新文章區塊。
+4. 更新 VivaTech 2026 系列頁文章列表。
+
+第一篇 VivaTech 2026 總覽文已經有完整手工設計 HTML，因此目前保留原頁面，不用簡短 Markdown 內容覆蓋。之後從後台新增的完整文章會自動產生 HTML。
 
 ## 建議下一步
 
-加入自動產生文章頁的 build script，讓後台按下發布後，Netlify 自動部署正式文章。
+在後台新增一篇測試草稿，確認「儲存草稿 -> Ready/Published -> Netlify 自動部署 -> 前台出現文章」的完整流程。
