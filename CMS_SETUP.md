@@ -19,7 +19,7 @@ https://github.com/jiajiayeh2013-oss/cellbedell-blog
 - 填寫圖片來源與參考來源
 - 使用 editorial workflow 管理草稿、審核與發布
 
-## 還需要完成的 Netlify 設定
+## Netlify / GitHub 設定狀態
 
 目前已完成：
 
@@ -27,20 +27,17 @@ https://github.com/jiajiayeh2013-oss/cellbedell-blog
 2. 專案已推送到 GitHub：`jiajiayeh2013-oss/cellbedell-blog`。
 3. Netlify production site 已連接 GitHub CI/CD。
 4. `main` branch push 到 GitHub 後會自動觸發 Netlify 部署。
-
-Decap CMS 要真正可用，仍需要完成：
-
-1. 在 Netlify 啟用 Identity。
-2. 在 Netlify 啟用 Git Gateway。
-3. 邀請管理者 email。
-4. 管理者進入 `/admin/` 設定密碼後登入。
+5. Netlify Identity 已啟用。
+6. Git Gateway 已啟用。
+7. 管理者邀請已送出。
+8. `/admin/` 已可正常載入 Decap CMS 登入畫面。
 
 目前 Netlify site 狀態：
 
 - `repo_url` 是 `https://github.com/jiajiayeh2013-oss/cellbedell-blog`。
 - production branch 是 `main`。
 - 最新 production deploy 已由 GitHub commit 觸發。
-- `identity_instance_id` 仍是空值，代表 Netlify Identity 尚未啟用。
+- `identity_instance_id` 已存在，代表 Netlify Identity 已啟用。
 
 ## 重要限制
 
@@ -48,4 +45,4 @@ Decap CMS 會把文章存成 `content/posts/*.md`。目前網站仍以既有 HTM
 
 ## 建議下一步
 
-先完成 Netlify Identity / Git Gateway。完成後再加入自動產生文章頁的 build script，讓後台按下發布後，Netlify 自動部署正式文章。
+加入自動產生文章頁的 build script，讓後台按下發布後，Netlify 自動部署正式文章。
