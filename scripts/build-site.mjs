@@ -228,7 +228,7 @@ function renderPost(post) {
     <meta name="description" content="${escapeHtml(post.summary || post.subtitle || post.title)}" />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body>
+  <body class="post-page">
     <div class="page-shell">
       <header class="hero">
         <nav class="topbar" aria-label="主導覽">
