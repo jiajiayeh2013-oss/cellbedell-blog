@@ -5,7 +5,7 @@ Cellbedell Blog 目前有兩層管理方式：
 1. Google Sheets：內容規劃、狀態追蹤、來源管理。
 2. Decap CMS：正式發文後台，路徑為 `/admin/`。
 
-Google Sheets 適合先收集點子與安排每日發文；Decap CMS 適合正式新增文章與發布。
+Google Sheets 適合先收集點子與安排每日發文；Decap CMS 適合正式新增文章與發布。若人在外面、移動中或不方便進後台時，可先用 Slack 收集素材，規則見 `SLACK_WORKFLOW.md`。
 
 後台連結：
 

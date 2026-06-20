@@ -10,6 +10,8 @@ const htmlFiles = [
   "series-style-life.html",
   "thanks.html",
   "posts/2026-06-19-vivatech-2026-highlights.html",
+  "posts/2026-06-20-ai-agent-hospitality-service.html",
+  "posts/2026-06-20-vivatech-2026-after-show-signals.html",
 ];
 
 const missing = [];

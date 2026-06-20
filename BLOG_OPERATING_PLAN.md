@@ -26,6 +26,8 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 - `styles.css`：全站共用視覺樣式。
 - `BLOG_POSITIONING.md`：長期編輯定位與系列規則。
 - `CONTENT_BACKEND.md`：Google Sheets 內容後台欄位與每日發文規則。
+- `SLACK_WORKFLOW.md`：Slack 收件、外出溝通與發文接力方式。
+- `AUTOMATION_ROADMAP.md`：每日自動草稿、Slack 遠端發文與長期自動化架構。
 
 ### 網站維護原則
 
@@ -88,6 +90,15 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 - 在展會期間喚醒此 thread。
 - 提醒先整理來源、選題、圖片與草稿方向。
 - 採「草稿確認後部署」流程，不直接自動改網站或部署。
+
+### 外出時的溝通方式
+
+如果不方便回到這個 thread，優先使用 Slack 作為外部收件平台：
+
+- 靈感、連結、照片、現場觀察先貼到 Slack。
+- 再由 Slack 內容整理成文章題目、大綱與草稿。
+- 詳細規則見 `SLACK_WORKFLOW.md`。
+- 若要把 Slack 升級成正式遠端發文入口，依 `AUTOMATION_ROADMAP.md` 分階段實作。
 
 ## 3. 部署與上線
 

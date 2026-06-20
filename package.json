@@ -2,6 +2,7 @@
   "scripts": {
     "build": "node scripts/build-site.mjs",
     "check:cms": "node -e \"const fs=require('fs'); for (const file of ['admin/index.html','admin/config.yml','content/posts/2026-06-19-vivatech-2026-highlights.md']) { if (!fs.existsSync(file)) throw new Error(file + ' missing'); } console.log('cms files ok')\"",
-    "check:links": "node scripts/check-site-links.mjs"
+    "check:links": "node scripts/check-site-links.mjs",
+    "check:slack-bot": "node scripts/check-slack-bot-config.mjs"
   }
 }

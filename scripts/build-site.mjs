@@ -192,7 +192,13 @@ function loadPosts() {
       };
     })
     .filter((post) => ["Ready", "Published"].includes(post.status))
-    .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
+    .sort((a, b) => {
+      const dateOrder = String(b.date || "").localeCompare(String(a.date || ""));
+      if (dateOrder !== 0) return dateOrder;
+      const manualOrder = Number(b.order || 0) - Number(a.order || 0);
+      if (manualOrder !== 0) return manualOrder;
+      return String(b.slug || "").localeCompare(String(a.slug || ""));
+    });
 }
 
 function renderPost(post) {
