@@ -4,6 +4,7 @@ import path from "node:path";
 const rootDir = process.cwd();
 const contentDir = path.join(rootDir, "content", "posts");
 const postsDir = path.join(rootDir, "posts");
+const siteUrl = "https://cellbedell-blog.netlify.app";
 
 const seriesMap = {
   "VivaTech / 科技展觀察": {
@@ -47,6 +48,10 @@ function escapeHtml(value = "") {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function escapeXml(value = "") {
+  return escapeHtml(value).replaceAll("'", "&apos;");
 }
 
 function slugFromFilename(filePath) {
@@ -161,6 +166,12 @@ function normalizeAssetPath(value = "", fromPost = false) {
   return `${fromPost ? "../" : "./"}${value.replace(/^\.\//, "")}`;
 }
 
+function absoluteUrl(value = "") {
+  if (!value) return siteUrl;
+  if (value.startsWith("http")) return value;
+  return `${siteUrl}${value.startsWith("/") ? value : `/${value}`}`;
+}
+
 function formatDate(date) {
   return String(date || "").replaceAll("-", ".");
 }
@@ -204,6 +215,9 @@ function loadPosts() {
 function renderPost(post) {
   const series = seriesMap[post.series] || seriesMap["VivaTech / 科技展觀察"];
   const heroImage = normalizeAssetPath(post.hero_image, true);
+  const socialImage = absoluteUrl(post.hero_image || "");
+  const canonicalUrl = `${siteUrl}/posts/${post.slug}`;
+  const description = post.summary || post.subtitle || post.title;
   const heroAlt = post.hero_image_alt || post.title;
   const bodyHtml = markdownToHtml(post.body);
   const sourceItems = post.sources
@@ -225,7 +239,17 @@ function renderPost(post) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(post.title)} | Cellbedell Blog</title>
-    <meta name="description" content="${escapeHtml(post.summary || post.subtitle || post.title)}" />
+    <meta name="description" content="${escapeHtml(description)}" />
+    <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Cellbedell Blog" />
+    <meta property="og:title" content="${escapeHtml(post.title)}" />
+    <meta property="og:description" content="${escapeHtml(description)}" />
+    <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
+    ${post.hero_image ? `<meta property="og:image" content="${escapeHtml(socialImage)}" />` : ""}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${escapeHtml(post.title)}" />
+    <meta name="twitter:description" content="${escapeHtml(description)}" />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="post-page">
@@ -466,6 +490,44 @@ function updateVivaTechSeries(posts) {
   );
 }
 
+function updateSeoFiles(posts) {
+  const staticPages = [
+    { path: "/", priority: "1.0" },
+    { path: "/series-vivatech-2026.html", priority: "0.8" },
+    { path: "/series-media-lens.html", priority: "0.6" },
+    { path: "/series-hotel-tech.html", priority: "0.6" },
+    { path: "/series-ai-humanities.html", priority: "0.6" },
+    { path: "/series-style-life.html", priority: "0.6" },
+  ];
+  const postPages = posts.map((post) => ({
+    path: `/posts/${post.slug}`,
+    lastmod: post.date,
+    priority: "0.9",
+  }));
+  const urls = [...staticPages, ...postPages];
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map((item) => `  <url>
+    <loc>${escapeXml(absoluteUrl(item.path))}</loc>
+    ${item.lastmod ? `<lastmod>${escapeXml(item.lastmod)}</lastmod>` : ""}
+    <priority>${item.priority}</priority>
+  </url>`)
+  .join("\n")}
+</urlset>
+`;
+
+  write(path.join(rootDir, "sitemap.xml"), sitemap);
+  write(
+    path.join(rootDir, "robots.txt"),
+    `User-agent: *
+Allow: /
+
+Sitemap: ${siteUrl}/sitemap.xml
+`,
+  );
+}
+
 function main() {
   fs.mkdirSync(postsDir, { recursive: true });
   const posts = loadPosts();
@@ -478,6 +540,7 @@ function main() {
 
   updateIndex(posts);
   updateVivaTechSeries(posts);
+  updateSeoFiles(posts);
   console.log(`Built ${posts.length} CMS post(s).`);
 }
 
