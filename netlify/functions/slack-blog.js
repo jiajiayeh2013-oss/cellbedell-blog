@@ -50,7 +50,11 @@ const verifySlackRequest = (event, rawBody) => {
   const signingSecret = process.env.SLACK_SIGNING_SECRET;
 
   if (!signingSecret) {
-    return { ok: true, skipped: true };
+    if (process.env.SLACK_SKIP_SIGNATURE_VERIFICATION === "true") {
+      return { ok: true, skipped: true };
+    }
+
+    return { ok: false, reason: "Missing SLACK_SIGNING_SECRET" };
   }
 
   const timestamp = getHeader(event.headers, "x-slack-request-timestamp");

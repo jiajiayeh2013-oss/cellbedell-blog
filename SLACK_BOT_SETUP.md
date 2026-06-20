@@ -33,6 +33,8 @@ curl -X POST http://localhost:8888/.netlify/functions/slack-blog \
 
 如果沒有設定 `OPENAI_API_KEY`，endpoint 仍會回覆一份規則版草稿骨架，方便先測 Slack 流程。
 
+安全提醒：正式環境必須設定 `SLACK_SIGNING_SECRET`。只有本機測試時，才可以暫時設定 `SLACK_SKIP_SIGNATURE_VERIFICATION=true`。
+
 Netlify CLI 設定範例：
 
 ```bash
