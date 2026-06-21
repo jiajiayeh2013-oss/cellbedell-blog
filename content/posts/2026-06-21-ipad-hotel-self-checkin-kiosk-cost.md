@@ -12,8 +12,8 @@ tags:
   - iPad 自助櫃檯
   - 智慧旅宿
   - Kiosk
-hero_image: /assets/2026-06-20-smart-checkin-frontdesk.svg
-hero_image_alt: 旅館櫃台旁放置 iPad 自助入住設備，旅客可自行完成報到流程
+hero_image: /assets/2026-06-20-hospitality-operations-before-after.png
+hero_image_alt: 旅館自助入住導入前後的營運流程比較，從櫃台排隊轉為 iPad 自助報到與系統整合
 hero_image_credit: Cellbedell / AI 生成概念圖
 summary: 對許多旅館與民宿來說，自助入住不一定要從大型 kiosk 開始。iPad 自助櫃檯能先解決資料確認、付款、QR Code 與通行流程，降低硬體成本與維護壓力。
 next_direction: iPad 自助櫃檯導入清單, 自助入住與 PMS 串接, AI 訪客管理與智慧門禁
