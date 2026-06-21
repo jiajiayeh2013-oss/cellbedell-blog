@@ -54,6 +54,10 @@ function escapeXml(value = "") {
   return escapeHtml(value).replaceAll("'", "&apos;");
 }
 
+function escapeJsonScript(value) {
+  return JSON.stringify(value, null, 2).replaceAll("</", "<\\/");
+}
+
 function slugFromFilename(filePath) {
   return path.basename(filePath, ".md");
 }
@@ -244,6 +248,41 @@ function renderPost(post) {
   const description = post.summary || post.subtitle || post.title;
   const heroAlt = post.hero_image_alt || post.title;
   const bodyHtml = markdownToHtml(post.body);
+  const keywords = [
+    ...post.tags,
+    series.label,
+    post.title,
+    "Cellbedell Blog",
+  ]
+    .filter(Boolean)
+    .join(", ");
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    headline: post.title,
+    description,
+    image: post.hero_image ? [socialImage] : undefined,
+    datePublished: post.date,
+    dateModified: post.updated || post.date,
+    author: {
+      "@type": "Organization",
+      name: post.author || "Cellbedell",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Cellbedell Blog",
+      url: siteUrl,
+    },
+    articleSection: series.label,
+    keywords: post.tags,
+    inLanguage: "zh-Hant",
+    about: post.tags.map((tag) => ({ "@type": "Thing", name: tag })),
+    isAccessibleForFree: true,
+  };
   const sourceItems = post.sources
     .map((source) => `<li><a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a></li>`)
     .join("\n");
@@ -264,6 +303,7 @@ function renderPost(post) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(post.title)} | Cellbedell Blog</title>
     <meta name="description" content="${escapeHtml(description)}" />
+    <meta name="keywords" content="${escapeHtml(keywords)}" />
     <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Cellbedell Blog" />
@@ -271,9 +311,14 @@ function renderPost(post) {
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
     ${post.hero_image ? `<meta property="og:image" content="${escapeHtml(socialImage)}" />` : ""}
+    <meta property="article:published_time" content="${escapeHtml(post.date || "")}" />
+    <meta property="article:modified_time" content="${escapeHtml(post.updated || post.date || "")}" />
+    <meta property="article:section" content="${escapeHtml(series.label)}" />
+    ${post.tags.map((tag) => `<meta property="article:tag" content="${escapeHtml(tag)}" />`).join("\n    ")}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(post.title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
+    <script type="application/ld+json">${escapeJsonScript(jsonLd)}</script>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="post-page">
