@@ -32,6 +32,8 @@ sources:
 
 {{youtube:rdYJX55aIHY|Hotel Self Check-in System Demo | Replace Large Check-in Kiosks with iPad and Reduce Hardware Costs|si=WpGr8SN1WsipcPRT}}
 
+![Cellbedell iPad 自助入住流程，從手機 pre check-in、多台 iPad 分流、自助發卡機或手機金鑰，到電子鎖自有電路板完成開門](/assets/2026-06-21-self-checkin-flow-diagram.svg "Cellbedell / 自助入住流程示意圖")
+
 ## 大型 kiosk 解決的是尖峰排隊，但不一定適合所有場域
 
 大型自助 Check-in 機最適合的場景，是大量旅客同時抵達、流程標準化、空間足夠，而且飯店已有清楚的 PMS、付款、門鎖與房卡系統串接。它可以把櫃台尖峰分流，讓旅客自行確認訂單、付款、取卡或列印憑證。
