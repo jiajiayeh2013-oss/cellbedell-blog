@@ -560,13 +560,14 @@ function updateSeriesPage(posts, seriesName, fileName) {
 }
 
 function updateSeoFiles(posts) {
+  const latestDate = posts[0]?.updated || posts[0]?.date || new Date().toISOString().slice(0, 10);
   const staticPages = [
-    { path: "/", priority: "1.0" },
-    { path: "/series-vivatech-2026.html", priority: "0.8" },
-    { path: "/series-media-lens.html", priority: "0.6" },
-    { path: "/series-hotel-tech.html", priority: "0.6" },
-    { path: "/series-ai-humanities.html", priority: "0.6" },
-    { path: "/series-style-life.html", priority: "0.6" },
+    { path: "/", lastmod: latestDate, priority: "1.0" },
+    { path: "/series-vivatech-2026.html", lastmod: latestDate, priority: "0.8" },
+    { path: "/series-media-lens.html", lastmod: latestDate, priority: "0.6" },
+    { path: "/series-hotel-tech.html", lastmod: latestDate, priority: "0.6" },
+    { path: "/series-ai-humanities.html", lastmod: latestDate, priority: "0.6" },
+    { path: "/series-style-life.html", lastmod: latestDate, priority: "0.6" },
   ];
   const postPages = posts.map((post) => ({
     path: `/posts/${post.slug}`,
