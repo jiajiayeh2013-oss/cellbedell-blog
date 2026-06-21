@@ -138,7 +138,31 @@ function markdownToHtml(markdown) {
   const html = [];
 
   for (const block of blocks) {
-    if (block.startsWith("### ")) {
+    const youtube = block.match(/^\{\{youtube:([^}]+)\}\}$/);
+    if (youtube) {
+      const parts = youtube[1].split("|").map((part) => part.trim());
+      const videoId = escapeHtml(parts.shift() || "");
+      const query = parts.length > 1 && /^[A-Za-z0-9_-]+=/.test(parts.at(-1)) ? parts.pop() : "";
+      const title = escapeHtml(parts.join(" | ") || "Cellbedell video demo");
+      const embedQuery = query ? `?${escapeHtml(query.replace(/^\?/, ""))}` : "";
+      const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
+      html.push(`<figure class="video-embed article-video">
+  <iframe src="https://www.youtube.com/embed/${videoId}${embedQuery}" title="${title}" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>${title} <a href="${youtubeUrl}" target="_blank" rel="noopener">在 YouTube 開啟</a></figcaption>
+</figure>`);
+      continue;
+    }
+
+    const image = block.match(/^!\[([^\]]*)\]\((\S+)(?:\s+"([^"]+)")?\)$/);
+    if (image) {
+      const alt = escapeHtml(image[1]);
+      const src = normalizeAssetPath(image[2], true);
+      const source = escapeHtml(image[3] || "Cellbedell / AI 生成概念圖");
+      html.push(`<figure class="editorial-figure article-figure">
+  <img src="${src}" alt="${alt}" />
+  <figcaption>${alt}。圖片來源：${source}</figcaption>
+</figure>`);
+    } else if (block.startsWith("### ")) {
       html.push(`<h3>${inlineMarkdown(block.slice(4))}</h3>`);
     } else if (block.startsWith("## ")) {
       html.push(`<h2>${inlineMarkdown(block.slice(3))}</h2>`);
@@ -431,9 +455,9 @@ function renderDailyBoard(posts) {
           </div>`;
 }
 
-function renderSeriesList(posts) {
-  const vivatechPosts = posts.filter((post) => post.series === "VivaTech / 科技展觀察");
-  const items = vivatechPosts
+function renderSeriesList(posts, seriesName = "VivaTech / 科技展觀察") {
+  const seriesPosts = posts.filter((post) => post.series === seriesName);
+  const items = seriesPosts
     .map((post) => {
       const image = normalizeAssetPath(post.hero_image);
       return `<article class="list-article">
@@ -480,13 +504,13 @@ function updateIndex(posts) {
   );
 }
 
-function updateVivaTechSeries(posts) {
-  const seriesPath = path.join(rootDir, "series-vivatech-2026.html");
+function updateSeriesPage(posts, seriesName, fileName) {
+  const seriesPath = path.join(rootDir, fileName);
   betweenMarkers(
     seriesPath,
     "<!-- CMS:series-posts:start -->",
     "<!-- CMS:series-posts:end -->",
-    renderSeriesList(posts),
+    renderSeriesList(posts, seriesName),
   );
 }
 
@@ -539,7 +563,8 @@ function main() {
   }
 
   updateIndex(posts);
-  updateVivaTechSeries(posts);
+  updateSeriesPage(posts, "VivaTech / 科技展觀察", "series-vivatech-2026.html");
+  updateSeriesPage(posts, "旅館生活科技", "series-hotel-tech.html");
   updateSeoFiles(posts);
   console.log(`Built ${posts.length} CMS post(s).`);
 }

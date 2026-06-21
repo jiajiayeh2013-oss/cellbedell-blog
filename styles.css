@@ -526,6 +526,42 @@ a {
   margin-top: 20px;
 }
 
+.post-page .article-figure {
+  margin: 30px 0 34px;
+}
+
+.post-page .article-figure img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.post-page .article-figure figcaption {
+  max-width: 68ch;
+  line-height: 1.6;
+}
+
+.post-page .article-video {
+  margin: 34px 0 38px;
+}
+
+.post-page .article-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 18px;
+  background: #14110f;
+  box-shadow: 0 18px 44px rgba(67, 45, 28, 0.14);
+}
+
+.post-page .article-video figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .post-page .sidebar {
   gap: 14px;
 }
