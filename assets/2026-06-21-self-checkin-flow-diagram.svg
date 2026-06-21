@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
   <title id="title">Cellbedell iPad 自助入住與發卡流程示意圖</title>
-  <desc id="desc">旅客先用手機完成 pre check-in，抵達後由多台 iPad 分流，系統透過邊緣運算決定發放手機金鑰或由 Cellbedell 自助發卡機發放房卡，最後透過電子鎖自有電路板完成開門。</desc>
+  <desc id="desc">旅客先用手機完成 pre check-in，抵達後由多台 iPad 分流。Cellbedell 透過去中心化邊緣運算管理，讓現場節點決定發放手機金鑰或由自助發卡機發放房卡，最後透過電子鎖自有電路板完成開門。</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbf7ef"/>
@@ -42,8 +42,8 @@
   <circle cx="1070" cy="126" r="150" fill="#dcebdd" opacity=".52"/>
   <circle cx="112" cy="562" r="168" fill="#eed2bb" opacity=".48"/>
 
-  <text x="64" y="68" class="title">iPad 自助入住流程：預辦、分流、發卡與開門</text>
-  <text x="64" y="102" class="sub">把旅客抵達前的資料、現場發卡、手機金鑰與電子鎖控制接成完整閉環</text>
+  <text x="64" y="68" class="title">Cellbedell 去中心化邊緣運算管理流程</text>
+  <text x="64" y="102" class="sub">把 pre check-in、iPad 分流、現場發卡、手機金鑰與電子鎖控制接成完整閉環</text>
 
   <rect x="64" y="128" width="1072" height="8" rx="4" fill="url(#bar)" opacity=".95"/>
 
@@ -89,7 +89,7 @@
     <rect class="card" width="236" height="292" rx="24"/>
     <circle cx="42" cy="42" r="19" class="warm"/>
     <text x="42" y="47" text-anchor="middle" class="step-num">03</text>
-    <text x="74" y="48" class="label" fill="#a75a38">EDGE COMPUTE</text>
+    <text x="74" y="48" class="label" fill="#a75a38">EDGE NODE</text>
 
     <rect x="58" y="72" width="120" height="108" rx="18" fill="#3b332d"/>
     <rect x="76" y="92" width="84" height="22" rx="6" class="screen"/>
@@ -98,7 +98,7 @@
     <circle cx="186" cy="94" r="10" class="green"/>
 
     <text x="30" y="218" class="step-title">自助發卡機</text>
-    <text x="30" y="248" class="step-copy">現場核對權限</text>
+    <text x="30" y="248" class="step-copy">現場邊緣運算核對</text>
     <text x="30" y="272" class="step-copy">製卡、發卡或啟用金鑰</text>
   </g>
 
@@ -129,7 +129,7 @@
 
   <g transform="translate(64 594)">
     <rect width="1072" height="50" rx="25" fill="#302a25" opacity=".94"/>
-    <text x="30" y="23" font-family="Noto Sans TC, PingFang TC, sans-serif" font-size="15.5" font-weight="700" fill="#fffaf2">核心差異：大型 kiosk 是單點重設備；Cellbedell 可用多台 iPad 分流，搭配自助發卡機或手機金鑰。</text>
-    <text x="30" y="41" font-family="Noto Sans TC, PingFang TC, sans-serif" font-size="15.5" font-weight="700" fill="#fffaf2">電子鎖需整合自有電路板，才能把入住狀態、房卡/金鑰權限與實際開門接成閉環。</text>
+    <text x="30" y="23" font-family="Noto Sans TC, PingFang TC, sans-serif" font-size="15.5" font-weight="700" fill="#fffaf2">核心差異：大型 kiosk 是集中式單點設備；Cellbedell 是去中心化邊緣運算管理。</text>
+    <text x="30" y="41" font-family="Noto Sans TC, PingFang TC, sans-serif" font-size="15.5" font-weight="700" fill="#fffaf2">各節點可處理發卡、手機金鑰與電子鎖控制，降低單點故障並提升擴充彈性。</text>
   </g>
 </svg>
