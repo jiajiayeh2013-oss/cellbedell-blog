@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Kiosk task trigger flow</title>
+  <desc id="desc">A hotel self check-in kiosk turns guest actions into trackable tasks: PMS update, card issuing, mobile credential, access permission, and staff notification.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="0.55" stop-color="#f0e4d5"/>
+      <stop offset="1" stop-color="#ddebdc"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf3"/>
+      <stop offset="1" stop-color="#e8f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-16%" y="-20%" width="132%" height="145%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#4d3526" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M1 1l10 5-10 5z" fill="#6d7b58"/>
+    </marker>
+    <style>
+      .title{font:700 32px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;fill:#211814}
+      .sub{font:500 17px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;fill:#75685e}
+      .label{font:800 13px "Inter","Noto Sans TC",sans-serif;letter-spacing:.11em;fill:#9f5437}
+      .device-title{font:700 24px "Noto Sans TC","PingFang TC",sans-serif;fill:#211814}
+      .copy{font:500 15px "Noto Sans TC","PingFang TC",sans-serif;fill:#6a5f56}
+      .task-title{font:700 18px "Noto Sans TC","PingFang TC",sans-serif;fill:#211814}
+      .task-copy{font:500 13px "Noto Sans TC","PingFang TC",sans-serif;fill:#6f655d}
+      .card{fill:#fffaf2;stroke:#ded0c0;stroke-width:1.4;filter:url(#shadow)}
+      .task{fill:#fffaf3;stroke:#d9cabb;stroke-width:1.25;filter:url(#shadow)}
+      .dark{fill:#2f2621}
+      .warm{fill:#a85a38}
+      .green{fill:#486f52}
+      .cream{fill:#fff7ec}
+      .line{stroke:#6d7b58;stroke-width:3.2;stroke-linecap:round;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#a85a38;stroke-width:3;stroke-linecap:round;stroke-dasharray:7 9;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" rx="34" fill="url(#bg)"/>
+  <circle cx="1048" cy="122" r="164" fill="#d9eadb" opacity=".6"/>
+  <circle cx="116" cy="574" r="176" fill="#efcfb8" opacity=".52"/>
+
+  <text x="64" y="68" class="title">Kiosk 不是表單，而是入住任務觸發器</text>
+  <text x="64" y="101" class="sub">旅客完成一個操作後，系統應該能更新 PMS、發卡、開通權限並通知現場人員</text>
+
+  <g transform="translate(78 168)">
+    <rect class="card" width="330" height="365" rx="30"/>
+    <text x="38" y="48" class="label">GUEST ACTION</text>
+    <text x="38" y="88" class="device-title">自助 Kiosk / iPad</text>
+    <text x="38" y="120" class="copy">旅客確認訂單、身份、付款與入住規則</text>
+
+    <g transform="translate(82 154)">
+      <rect x="0" y="0" width="166" height="132" rx="18" class="dark"/>
+      <rect x="15" y="16" width="136" height="88" rx="12" fill="url(#screen)"/>
+      <rect x="63" y="132" width="40" height="56" rx="8" class="dark"/>
+      <rect x="30" y="184" width="106" height="16" rx="8" class="dark"/>
+      <path d="M42 52h84M42 76h62" stroke="#a85a38" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="126" cy="76" r="16" class="green"/>
+      <path d="M118 76l6 7 13-16" stroke="#fffaf3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+
+  <path d="M408 350 C472 350 494 350 548 350" class="line"/>
+
+  <g transform="translate(548 132)">
+    <rect class="task" width="250" height="106" rx="22"/>
+    <circle cx="38" cy="40" r="18" class="warm"/>
+    <path d="M30 40h16M38 32v16" stroke="#fffaf3" stroke-width="5" stroke-linecap="round"/>
+    <text x="72" y="43" class="task-title">更新 PMS 狀態</text>
+    <text x="72" y="72" class="task-copy">報到完成、備註與旅客紀錄</text>
+  </g>
+
+  <g transform="translate(848 132)">
+    <rect class="task" width="250" height="106" rx="22"/>
+    <circle cx="38" cy="40" r="18" class="green"/>
+    <rect x="28" y="31" width="20" height="24" rx="4" class="cream"/>
+    <path d="M31 62h34" stroke="#486f52" stroke-width="5" stroke-linecap="round"/>
+    <text x="72" y="43" class="task-title">觸發自助發卡</text>
+    <text x="72" y="72" class="task-copy">依房號與效期產生房卡</text>
+  </g>
+
+  <g transform="translate(548 284)">
+    <rect class="task" width="250" height="106" rx="22"/>
+    <circle cx="38" cy="40" r="18" class="green"/>
+    <path d="M28 40h20M38 30v44" stroke="#fffaf3" stroke-width="5" stroke-linecap="round"/>
+    <text x="72" y="43" class="task-title">產生手機憑證</text>
+    <text x="72" y="72" class="task-copy">QR Code、行動鑰匙或門票</text>
+  </g>
+
+  <g transform="translate(848 284)">
+    <rect class="task" width="250" height="106" rx="22"/>
+    <circle cx="38" cy="40" r="18" class="warm"/>
+    <path d="M27 43c10-18 31-18 42 0" stroke="#fffaf3" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M34 43v18h28V43" stroke="#fffaf3" stroke-width="5" stroke-linejoin="round" fill="none"/>
+    <text x="72" y="43" class="task-title">開通門禁權限</text>
+    <text x="72" y="72" class="task-copy">房門、電梯與公設時段</text>
+  </g>
+
+  <g transform="translate(548 436)">
+    <rect class="task" width="250" height="106" rx="22"/>
+    <circle cx="38" cy="40" r="18" class="warm"/>
+    <path d="M28 34h20M28 46h30M28 58h16" stroke="#fffaf3" stroke-width="5" stroke-linecap="round"/>
+    <text x="72" y="43" class="task-title">通知現場人員</text>
+    <text x="72" y="72" class="task-copy">例外狀況交給櫃台接手</text>
+  </g>
+
+  <g transform="translate(848 436)">
+    <rect class="task" width="250" height="106" rx="22"/>
+    <circle cx="38" cy="40" r="18" class="green"/>
+    <path d="M29 54l9 9 20-28" stroke="#fffaf3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="72" y="43" class="task-title">留下追蹤紀錄</text>
+    <text x="72" y="72" class="task-copy">誰、何時、哪個權限被啟用</text>
+  </g>
+
+  <path d="M798 185 C820 185 822 185 848 185" class="line"/>
+  <path d="M670 284 C670 252 670 246 670 238" class="dash"/>
+  <path d="M798 337 C820 337 822 337 848 337" class="line"/>
+  <path d="M670 436 C670 404 670 398 670 390" class="dash"/>
+  <path d="M798 489 C820 489 822 489 848 489" class="line"/>
+</svg>
