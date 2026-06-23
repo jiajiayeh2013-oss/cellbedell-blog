@@ -1,8 +1,20 @@
 {
   "title": "Signal & Style 每週靈感筆記",
   "cadence": "weekly",
-  "updated": "2026-06-23T06:15:56.414Z",
+  "updated": "2026-06-23T08:11:32.464Z",
   "posts": [
+    {
+      "title": "會員錢包與優惠券核銷：從領券到回訪，怎麼接成一條營運流程？",
+      "date": "2026-06-23",
+      "summary": "會員錢包的核心不是多一張手機會員卡，而是把發券、領券、核銷、點數、餘額與轉換紀錄接回後台，讓優惠券變成會員營運的一部分。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-23-member-wallet-coupon-redemption"
+    },
+    {
+      "title": "球場與大型場館智慧通行：Wallet 票券如何支撐高人流入場？",
+      "date": "2026-06-23",
+      "summary": "大型場館智慧通行的核心，是讓 Wallet 票券、NFC/BLE、閘口設備、分區權限與邊緣驗證共同支撐高人流入場，而不是只把紙票換成 QR Code。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-23-stadium-smart-access-wallet"
+    },
     {
       "title": "PMS 如何接上自助 Kiosk？從訂單資料到現場報到",
       "date": "2026-06-23",
@@ -20,18 +32,6 @@
       "date": "2026-06-22",
       "summary": "AI agent 接進旅宿 PMS 後，旅客的一句需求可以變成查訂單、確認房況、建立備註、發卡、開通門禁與通知現場人員的任務鏈，而不只是客服聊天。",
       "url": "https://cellbedell-blog.netlify.app/posts/2026-06-22-ai-agent-hotel-pms-workflow"
-    },
-    {
-      "title": "行動鑰匙與智慧門禁怎麼選？從國際品牌到中小旅宿導入架構",
-      "date": "2026-06-21",
-      "summary": "行動鑰匙與智慧門禁的選型，重點不只是品牌，而是 PMS 串接、現場斷網備援、門鎖改裝成本、旅客操作方式、安全維護與權限管理能不能接成一條穩定流程。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-21-mobile-key-access-control-brand-comparison"
-    },
-    {
-      "title": "旅館自助入住一定要買大型 Kiosk 嗎？iPad 自助櫃檯的成本與流程比較",
-      "date": "2026-06-21",
-      "summary": "對許多旅館與民宿來說，自助入住不一定要從大型 kiosk 開始。Cellbedell 以去中心化邊緣運算管理，讓 iPad、自助發卡機、手機金鑰與電子鎖節點協同完成入住流程。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-21-ipad-hotel-self-checkin-kiosk-cost"
     }
   ]
 }

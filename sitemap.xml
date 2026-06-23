@@ -281,6 +281,20 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://cellbedell-blog.netlify.app/posts/2026-06-23-member-wallet-coupon-redemption</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://cellbedell-blog.netlify.app/posts/2026-06-23-member-wallet-coupon-redemption" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cellbedell-blog.netlify.app/posts/2026-06-23-member-wallet-coupon-redemption" />
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cellbedell-blog.netlify.app/posts/2026-06-23-stadium-smart-access-wallet</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://cellbedell-blog.netlify.app/posts/2026-06-23-stadium-smart-access-wallet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cellbedell-blog.netlify.app/posts/2026-06-23-stadium-smart-access-wallet" />
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cellbedell-blog.netlify.app/posts/2026-06-23-pms-kiosk-integration-checkin-flow</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://cellbedell-blog.netlify.app/posts/2026-06-23-pms-kiosk-integration-checkin-flow" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cellbedell-blog.netlify.app/posts/2026-06-23-pms-kiosk-integration-checkin-flow" />

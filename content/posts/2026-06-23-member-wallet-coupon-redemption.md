@@ -1,5 +1,5 @@
 ---
-status: Ready
+status: Published
 date: 2026-06-23
 order: 2
 series: 旅館生活科技
