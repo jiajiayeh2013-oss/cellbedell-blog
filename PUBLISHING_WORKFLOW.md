@@ -25,6 +25,7 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 11. 部署到 Netlify。
 12. 檢查線上首頁、系列頁、最新文章頁。
 13. 回到 Google Sheets，將文章狀態改為 `Published`。
+14. 產生或更新下一輪文章排程，至少安排接下來 3 到 5 篇，避免題目只停留在對話紀錄裡。
 
 ## 每篇文章固定內容
 
@@ -44,6 +45,18 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 
 - `2026-06-19`：系列首篇總覽文已完成。
 - `2026-06-20`：展會最後一天觀察，聚焦 AI、法國新創與展後值得追的生活科技。
+
+## 後續文章排程提醒
+
+每次完成一篇文章草稿或發布一篇文章後，都要同步檢查是否需要生成下一批文章排程。
+
+優先順序：
+
+1. 旅館生活科技 / PMS x Kiosk 系列：延續既有 2026-06-23 到 2026-07-09 排程。
+2. PropTech 觀測：依 `PROPTECH_OBSERVATION_STRATEGY.md` 每週整理 3 到 5 個可寫題目。
+3. AI 與人文、國際科技媒體觀察、時尚與生活：用來承接非旅宿但值得延伸的科技文化題目。
+
+排程最少要包含：預計發布日、系列、標題、核心問題、來源需求、圖片需求、狀態。
 
 ## 部署原則
 

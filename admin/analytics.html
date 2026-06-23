@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Signal & Style Analytics</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #211814;
+        --muted: #75665e;
+        --line: #dfd6cf;
+        --paper: #fffaf6;
+        --surface: #ffffff;
+        --accent: #b84f2f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 32px 0 56px;
+      }
+
+      .topbar,
+      .summary-grid,
+      .panel {
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        padding: 18px 20px;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-family: Georgia, serif;
+        font-size: clamp(28px, 4vw, 44px);
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .button {
+        border: 1px solid var(--ink);
+        background: var(--ink);
+        color: #fff;
+        min-height: 40px;
+        padding: 0 16px;
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--ink);
+      }
+
+      .hero {
+        display: grid;
+        gap: 12px;
+        margin: 28px 0;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        margin: 24px 0;
+      }
+
+      .metric {
+        padding: 18px;
+        border-right: 1px solid var(--line);
+      }
+
+      .metric:last-child {
+        border-right: 0;
+      }
+
+      .metric strong {
+        display: block;
+        margin-top: 8px;
+        font-size: 28px;
+      }
+
+      .panel {
+        margin-top: 20px;
+        padding: 20px;
+      }
+
+      .panel-heading {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        margin-bottom: 14px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        border-top: 1px solid var(--line);
+        padding: 12px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .numeric {
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .status {
+        margin-top: 18px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 760px) {
+        .topbar,
+        .panel-heading {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .summary-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .metric {
+          border-bottom: 1px solid var(--line);
+        }
+
+        table {
+          display: block;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <nav class="topbar">
+        <div>
+          <p class="muted">Signal & Style Admin</p>
+          <h1>點閱統計</h1>
+        </div>
+        <div>
+          <button class="button secondary" id="login-button" type="button">登入</button>
+          <button class="button secondary" id="logout-button" type="button" hidden>登出</button>
+          <a class="button" href="/admin/">回後台</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <p class="muted">追蹤每篇文章的頁面瀏覽量，協助判斷讀者喜歡哪些系列與主題。</p>
+        <p class="status" id="status">正在確認登入狀態...</p>
+      </section>
+
+      <section class="summary-grid" aria-label="Summary">
+        <div class="metric"><span class="muted">文章數</span><strong id="metric-articles">0</strong></div>
+        <div class="metric"><span class="muted">總點閱</span><strong id="metric-views">0</strong></div>
+        <div class="metric"><span class="muted">今日</span><strong id="metric-today">0</strong></div>
+        <div class="metric"><span class="muted">近 7 日</span><strong id="metric-7">0</strong></div>
+        <div class="metric"><span class="muted">近 30 日</span><strong id="metric-30">0</strong></div>
+      </section>
+
+      <section class="panel" aria-labelledby="article-title">
+        <div class="panel-heading">
+          <h2 id="article-title">熱門文章</h2>
+          <p class="muted" id="updated-at"></p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>文章</th>
+              <th>系列</th>
+              <th class="numeric">今日</th>
+              <th class="numeric">7 日</th>
+              <th class="numeric">30 日</th>
+              <th class="numeric">總計</th>
+            </tr>
+          </thead>
+          <tbody id="article-rows"></tbody>
+        </table>
+      </section>
+
+      <section class="panel" aria-labelledby="series-title">
+        <div class="panel-heading">
+          <h2 id="series-title">系列排行</h2>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>系列</th>
+              <th class="numeric">今日</th>
+              <th class="numeric">7 日</th>
+              <th class="numeric">30 日</th>
+              <th class="numeric">總計</th>
+            </tr>
+          </thead>
+          <tbody id="series-rows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      const statusEl = document.getElementById("status");
+      const loginButton = document.getElementById("login-button");
+      const logoutButton = document.getElementById("logout-button");
+      const formatNumber = (value) => Number(value || 0).toLocaleString("zh-Hant");
+      const escapeHtml = (value) =>
+        String(value || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+
+      function setMetric(id, value) {
+        document.getElementById(id).textContent = formatNumber(value);
+      }
+
+      function renderRows(targetId, rows, type) {
+        const html = rows
+          .slice(0, 30)
+          .map((item) => {
+            const title =
+              type === "article"
+                ? `${escapeHtml(item.title || item.slug)}<br><span class="muted">${escapeHtml(item.locale || "")} / ${escapeHtml(item.slug || "")}</span>`
+                : escapeHtml(item.series || "uncategorized");
+            return `<tr>
+              <td>${title}</td>
+              ${type === "article" ? `<td>${escapeHtml(item.series || "")}</td>` : ""}
+              <td class="numeric">${formatNumber(item.today)}</td>
+              <td class="numeric">${formatNumber(item.last7Days)}</td>
+              <td class="numeric">${formatNumber(item.last30Days)}</td>
+              <td class="numeric">${formatNumber(item.total)}</td>
+            </tr>`;
+          })
+          .join("");
+        document.getElementById(targetId).innerHTML = html || `<tr><td colspan="${type === "article" ? "6" : "5"}" class="muted">尚無資料</td></tr>`;
+      }
+
+      async function loadAnalytics() {
+        const user = netlifyIdentity.currentUser();
+        if (!user) {
+          statusEl.textContent = "請先登入 Netlify Identity 後查看統計。";
+          loginButton.hidden = false;
+          logoutButton.hidden = true;
+          return;
+        }
+
+        loginButton.hidden = true;
+        logoutButton.hidden = false;
+        statusEl.textContent = "正在載入統計...";
+
+        const token = await user.jwt();
+        const response = await fetch("/.netlify/functions/admin-views", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
+        if (!response.ok) {
+          statusEl.textContent = response.status === 401 ? "登入驗證失敗，請重新登入。" : "統計資料暫時無法載入。";
+          return;
+        }
+
+        const data = await response.json();
+        setMetric("metric-articles", data.totals.articles);
+        setMetric("metric-views", data.totals.views);
+        setMetric("metric-today", data.totals.today);
+        setMetric("metric-7", data.totals.last7Days);
+        setMetric("metric-30", data.totals.last30Days);
+        renderRows("article-rows", data.articles || [], "article");
+        renderRows("series-rows", data.series || [], "series");
+        document.getElementById("updated-at").textContent = data.updatedAt ? `更新：${new Date(data.updatedAt).toLocaleString("zh-Hant")}` : "";
+        statusEl.textContent = "已載入最新點閱統計。";
+      }
+
+      loginButton.addEventListener("click", () => netlifyIdentity.open("login"));
+      logoutButton.addEventListener("click", () => netlifyIdentity.logout());
+      window.netlifyIdentity.on("init", loadAnalytics);
+      window.netlifyIdentity.on("login", () => {
+        netlifyIdentity.close();
+        loadAnalytics();
+      });
+      window.netlifyIdentity.on("logout", loadAnalytics);
+      window.netlifyIdentity.init();
+    </script>
+  </body>
+</html>

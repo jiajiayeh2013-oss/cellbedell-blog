@@ -4,10 +4,83 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Cellbedell Blog Admin</title>
+    <title>Signal & Style Admin</title>
+    <link rel="stylesheet" href="./admin.css" />
   </head>
   <body>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <div class="local-admin-gate" id="local-admin-gate" hidden>
+      <section class="gate-card">
+        <p class="eyebrow">Signal & Style Admin</p>
+        <h1>內容後台請使用正式網址登入</h1>
+        <p>
+          目前這個頁面是在本機預覽環境。Decap CMS 的 Git Gateway 需要 Netlify Identity，
+          所以要在正式 Netlify 網域登入後才能新增、編輯與發布文章。
+        </p>
+        <div class="gate-actions">
+          <a class="primary-action" href="https://cellbedell-blog.netlify.app/admin/">進入正式內容後台</a>
+          <a href="/admin/analytics.html">查看本機點閱統計頁</a>
+          <a href="/">回到本機網站預覽</a>
+        </div>
+      </section>
+    </div>
+    <div class="admin-loader" id="admin-loader" aria-live="polite">
+      <div class="loader-card">
+        <p class="eyebrow">Signal & Style</p>
+        <h1>Editorial Studio</h1>
+        <p>正在開啟文章後台、系列排程與編輯工作流。</p>
+      </div>
+    </div>
+    <nav class="admin-quickbar" aria-label="Admin quick links">
+      <a href="/admin/">內容後台</a>
+      <a href="/admin/analytics.html">點閱統計</a>
+      <a href="/">查看網站</a>
+    </nav>
+    <script>
+      (function () {
+        var isLocal = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])$/.test(window.location.hostname);
+        var gate = document.getElementById("local-admin-gate");
+        var loader = document.getElementById("admin-loader");
+        var hideLoader = function () {
+          if (!loader) return;
+          loader.classList.add("is-hidden");
+          window.setTimeout(function () {
+            if (loader && loader.parentNode) loader.parentNode.removeChild(loader);
+          }, 360);
+        };
+
+        if (isLocal) {
+          hideLoader();
+          if (gate) gate.hidden = false;
+          return;
+        }
+
+        window.setTimeout(hideLoader, 1600);
+        window.addEventListener("load", function () {
+          window.setTimeout(hideLoader, 500);
+        });
+
+        var identityScript = document.createElement("script");
+        identityScript.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+        document.body.appendChild(identityScript);
+
+        var cmsScript = document.createElement("script");
+        cmsScript.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
+        cmsScript.onload = function () {
+          if (window.CMS) {
+            CMS.registerPreviewStyle("/styles.css");
+            CMS.registerPreviewStyle("/admin/admin.css");
+          }
+        };
+        cmsScript.onerror = function () {
+          hideLoader();
+          if (gate) {
+            gate.hidden = false;
+            gate.querySelector("h1").textContent = "內容後台載入失敗";
+            gate.querySelector("p").textContent = "Decap CMS 或 Netlify Identity 暫時無法載入。請改用正式後台網址，或稍後重新整理。";
+          }
+        };
+        document.body.appendChild(cmsScript);
+      })();
+    </script>
   </body>
 </html>

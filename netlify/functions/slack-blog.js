@@ -167,7 +167,7 @@ const fallbackDraft = ({ message, series }) => {
 };
 
 const buildPrompt = ({ message, series, user }) => `
-你是 Cellbedell Blog 的繁體中文編輯助手。請根據 Slack 使用者 ${user} 的素材產生一篇可審稿的部落格草稿。
+你是 Signal & Style 的繁體中文編輯助手。請根據 Slack 使用者 ${user} 的素材產生一篇可審稿的部落格草稿。
 
 部落格風格：科技、設計、時尚、新創、生活方式與未來城市的混合觀察。不要寫成新聞翻譯，要回到生活場景與台灣讀者能理解的判斷。
 
@@ -244,7 +244,7 @@ const formatSlackResponse = ({ draft, generated, note, series }) => ({
       type: "section",
       text: {
         type: "mrkdwn",
-        text: `*Cellbedell Blog 草稿已建立*\n系列：*${series}*\n${note}`,
+        text: `*Signal & Style 草稿已建立*\n系列：*${series}*\n${note}`,
       },
     },
     {

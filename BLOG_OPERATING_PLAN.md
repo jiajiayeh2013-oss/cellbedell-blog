@@ -45,6 +45,10 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 - AI 與人文
 - 時尚與生活
 
+### 旅館生活科技近期支線
+
+- `PMS_KIOSK_SERIES_PLAN.md`：規劃 `PMS x Kiosk：打造更順的旅客入住體驗`，包含 2026-06-23 到 2026-07-09 的文章排程、SEO 角度、圖片需求與內部連結策略。
+
 ## 2. VivaTech 2026 每日追蹤與發文
 
 ### 目標

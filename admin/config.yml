@@ -17,9 +17,17 @@ collections:
     preview_path: "posts/{{slug}}.html"
     fields:
       - { label: "狀態", name: "status", widget: "select", options: ["Idea", "Drafting", "Review", "Ready", "Published", "Archived"], default: "Drafting" }
+      - { label: "語系", name: "locale", widget: "hidden", default: "zh-Hant" }
+      - { label: "翻譯群組 Key", name: "translation_key", widget: "string", required: false, hint: "同一篇文章的繁中、英文、日文請使用同一個 key；未填時會使用檔名。" }
+      - { label: "本地化 Slug", name: "localized_slug", widget: "string", required: false, hint: "繁中可留空；英文/日文建議使用英文網址 slug。" }
       - { label: "發布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "排程發布時間", name: "scheduled_publish_at", widget: "datetime", required: false, hint: "只有狀態為 Published 且排程時間已到，文章才會出現在前台。未填時使用發布日期。" }
+      - { label: "負責人", name: "owner", widget: "string", required: false }
+      - { label: "系列順序", name: "series_order", widget: "number", value_type: "int", required: false, hint: "同一系列內可用來標記第幾篇或手動排序。" }
       - { label: "系列", name: "series", widget: "select", options: ["VivaTech / 科技展觀察", "國際科技媒體觀察", "旅館生活科技", "AI 與人文", "時尚與生活"] }
       - { label: "標題", name: "title", widget: "string" }
+      - { label: "SEO 標題", name: "seo_title", widget: "string", required: false }
+      - { label: "SEO 描述", name: "seo_description", widget: "text", required: false }
       - { label: "副標", name: "subtitle", widget: "text", required: false }
       - { label: "作者", name: "author", widget: "string", default: "Cellbedell" }
       - { label: "標籤", name: "tags", widget: "list", required: false }
@@ -35,6 +43,95 @@ collections:
           - { label: "名稱", name: "title", widget: "string" }
           - { label: "連結", name: "url", widget: "string" }
       - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "posts_en"
+    label: "Articles / English"
+    folder: "content/en/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "en/posts/{{fields.localized_slug}}.html"
+    fields:
+      - { label: "Status", name: "status", widget: "select", options: ["Idea", "Drafting", "Review", "Ready", "Published", "Archived"], default: "Drafting" }
+      - { label: "Locale", name: "locale", widget: "hidden", default: "en" }
+      - { label: "Translation Key", name: "translation_key", widget: "string", hint: "Use the same key as the zh-Hant and ja versions." }
+      - { label: "Localized Slug", name: "localized_slug", widget: "string", hint: "English URL slug used under /en/posts/." }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Scheduled Publish Time", name: "scheduled_publish_at", widget: "datetime", required: false, hint: "The article is public only when status is Published and this time has arrived. Falls back to Publish Date." }
+      - { label: "Owner", name: "owner", widget: "string", required: false }
+      - { label: "Series Order", name: "series_order", widget: "number", value_type: "int", required: false }
+      - { label: "Series", name: "series", widget: "select", options: ["vivatech", "media-lens", "hotel-tech", "ai-humanities", "style-life"] }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Title", name: "seo_title", widget: "string", required: false }
+      - { label: "SEO Description", name: "seo_description", widget: "text", required: false }
+      - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+      - { label: "Author", name: "author", widget: "string", default: "Cellbedell" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+      - { label: "Hero Image Alt", name: "hero_image_alt", widget: "string", required: false }
+      - { label: "Image Credit", name: "hero_image_credit", widget: "string", required: false }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Next Direction", name: "next_direction", widget: "string", required: false }
+      - label: "Sources"
+        name: "sources"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "posts_ja"
+    label: "記事 / 日本語"
+    folder: "content/ja/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "ja/posts/{{fields.localized_slug}}.html"
+    fields:
+      - { label: "ステータス", name: "status", widget: "select", options: ["Idea", "Drafting", "Review", "Ready", "Published", "Archived"], default: "Drafting" }
+      - { label: "Locale", name: "locale", widget: "hidden", default: "ja" }
+      - { label: "翻訳 Key", name: "translation_key", widget: "string", hint: "繁中・英語・日本語で同じ key を使います。" }
+      - { label: "Localized Slug", name: "localized_slug", widget: "string", hint: "日本語版も /ja/posts/ では英数字 slug を推奨します。" }
+      - { label: "公開日", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "公開予定日時", name: "scheduled_publish_at", widget: "datetime", required: false, hint: "Published かつ予定日時を過ぎた記事だけが公開されます。未入力の場合は公開日を使います。" }
+      - { label: "担当者", name: "owner", widget: "string", required: false }
+      - { label: "シリーズ順", name: "series_order", widget: "number", value_type: "int", required: false }
+      - { label: "シリーズ", name: "series", widget: "select", options: ["vivatech", "media-lens", "hotel-tech", "ai-humanities", "style-life"] }
+      - { label: "タイトル", name: "title", widget: "string" }
+      - { label: "SEO タイトル", name: "seo_title", widget: "string", required: false }
+      - { label: "SEO 説明", name: "seo_description", widget: "text", required: false }
+      - { label: "サブタイトル", name: "subtitle", widget: "text", required: false }
+      - { label: "著者", name: "author", widget: "string", default: "Cellbedell" }
+      - { label: "タグ", name: "tags", widget: "list", required: false }
+      - { label: "メイン画像", name: "hero_image", widget: "image", required: false }
+      - { label: "画像 Alt", name: "hero_image_alt", widget: "string", required: false }
+      - { label: "画像クレジット", name: "hero_image_credit", widget: "string", required: false }
+      - { label: "概要", name: "summary", widget: "text" }
+      - { label: "次の方向性", name: "next_direction", widget: "string", required: false }
+      - label: "参考資料"
+        name: "sources"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+      - { label: "本文", name: "body", widget: "markdown" }
+
+  - name: "schedule"
+    label: "系列排程"
+    folder: "content/schedule"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{fields.planned_publish_at}} / {{fields.series}} / {{title}}"
+    fields:
+      - { label: "主題標題", name: "title", widget: "string" }
+      - { label: "系列", name: "series", widget: "select", options: ["vivatech", "media-lens", "hotel-tech", "ai-humanities", "style-life"] }
+      - { label: "預計發布時間", name: "planned_publish_at", widget: "datetime" }
+      - { label: "狀態", name: "status", widget: "select", options: ["Idea", "Drafting", "Review", "Ready", "Scheduled", "Published", "Archived"], default: "Idea" }
+      - { label: "負責人", name: "owner", widget: "string", required: false }
+      - { label: "語系", name: "locale", widget: "select", options: ["zh-Hant", "en", "ja", "th"], default: "zh-Hant" }
+      - { label: "對應文章 Slug", name: "post_slug", widget: "string", required: false, hint: "填入文章網址 slug，方便對照已建立的文章。" }
+      - { label: "摘要", name: "summary", widget: "text", required: false }
+      - { label: "備註", name: "notes", widget: "markdown", required: false }
 
   - name: "series"
     label: "系列頁"

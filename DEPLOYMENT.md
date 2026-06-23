@@ -39,6 +39,10 @@
 
 1. 站方新訂閱通知信
 2. 讀者歡迎信，需完成 Mailgun 寄件網域驗證後才會寄給外部 email
+3. 將讀者加入 Mailgun mailing list
+4. 每週一台灣時間上午 9:00 由 Netlify Scheduled Function 寄出週報
+
+目前對外設定的 Newsletter 頻率是「每週一封」。週報內容由 `npm run build` 產生的 `newsletter.json` 提供，預設收錄最新 5 篇已發布文章。
 
 Netlify 需要設定以下環境變數：
 
@@ -47,10 +51,33 @@ Netlify 需要設定以下環境變數：
 - `MAILGUN_API_BASE_URL`：選填，預設 `https://api.mailgun.net`；若使用 EU 區域可改成 `https://api.eu.mailgun.net`
 - `NEWSLETTER_FROM`：寄件人，例如 `Cellbedell Blog <hello@your-domain.com>`
 - `NEWSLETTER_NOTIFY_TO`：站方通知收件信箱
+- `NEWSLETTER_LIST_ADDRESS`：選填，Mailgun mailing list 地址；未設定時預設使用 `weekly@MAILGUN_DOMAIN`
+- `SITE_URL`：選填，週報 function 讀取 `newsletter.json` 的站台網址；預設 `https://cellbedell-blog.netlify.app`
 
 若尚未設定環境變數，訂閱表單會顯示設定提醒，不會假裝寄信成功。
 
 注意：`NEWSLETTER_FROM` 需要使用 Mailgun 已驗證網域底下的寄件地址，例如 `info@mg.cellbedell.com` 或你在 Mailgun 設定裡允許的自訂寄件人；否則 Mailgun 會拒絕寄送。
+
+週報排程設定在 `netlify.toml`：
+
+```toml
+[functions."weekly-newsletter"]
+  schedule = "0 1 * * 1"
+```
+
+這個 cron 是 UTC 時間，每週一 01:00 UTC，等於台灣時間每週一 09:00。
+
+## 本機預覽與訂閱測試
+
+不要用 `python -m http.server` 或其他純靜態伺服器測試訂閱表單，因為它們不支援 `POST /.netlify/functions/newsletter`，會回傳 `501 Unsupported method ('POST')`。
+
+本機請改用：
+
+```bash
+npm start
+```
+
+然後開啟 `http://localhost:8888`。這個預覽伺服器會同時提供靜態頁面與 `/.netlify/functions/newsletter`，行為會比較接近 Netlify。
 
 ## 上線前檢查
 

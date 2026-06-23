@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Stadium wallet access flow</title>
+  <desc id="desc">A redesigned stadium access flow showing scan and save, arrive and ready, quick pass, and the operating layer behind wallet tickets.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.58" stop-color="#e8f3ee"/>
+      <stop offset="1" stop-color="#f7f0df"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10243b"/>
+      <stop offset="1" stop-color="#214c54"/>
+    </linearGradient>
+    <filter id="shadow" x="-16%" y="-18%" width="132%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#163047" flood-opacity=".15"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M1 1l10 5-10 5z" fill="#2f7566"/>
+    </marker>
+    <style>
+      .title{font:700 34px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;fill:#14253a}
+      .sub{font:500 17px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;fill:#607084}
+      .eyebrow{font:800 12px "Inter","Noto Sans TC",sans-serif;letter-spacing:.13em;fill:#2f7566}
+      .step-title{font:800 24px "Noto Sans TC","PingFang TC",sans-serif;fill:#14253a}
+      .copy{font:500 15px "Noto Sans TC","PingFang TC",sans-serif;fill:#607084}
+      .small{font:600 12px "Inter","Noto Sans TC",sans-serif;fill:#6b7b8c}
+      .card{fill:#ffffff;stroke:#d9e4de;stroke-width:1.4;filter:url(#shadow)}
+      .panel{fill:#ffffff;stroke:#d9e4de;stroke-width:1.2;filter:url(#shadow)}
+      .line{stroke:#2f7566;stroke-width:4;stroke-linecap:round;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#d3a445;stroke-width:3;stroke-linecap:round;stroke-dasharray:7 9;fill:none}
+      .green{fill:#2f7566}
+      .gold{fill:#d3a445}
+      .navy{fill:#14253a}
+      .white{fill:#fff}
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" rx="34" fill="url(#bg)"/>
+  <circle cx="1068" cy="128" r="148" fill="#cfe9e0" opacity=".72"/>
+  <circle cx="132" cy="560" r="168" fill="#f0d8a8" opacity=".45"/>
+
+  <text x="62" y="68" class="title">大型場館的 Wallet 通行流程</text>
+  <text x="62" y="102" class="sub">票券進入手機錢包後，現場驗證就能從人工查票轉成可追蹤的權限流程</text>
+
+  <g transform="translate(66 154)">
+    <rect class="card" width="295" height="316" rx="28"/>
+    <text x="34" y="44" class="eyebrow">STEP 1</text>
+    <text x="34" y="82" class="step-title">Scan &amp; Save</text>
+    <text x="34" y="114" class="copy">購票或報名後，把門票存入</text>
+    <text x="34" y="138" class="copy">Apple Wallet / Android Wallet</text>
+    <g transform="translate(78 170)">
+      <rect x="0" y="0" width="138" height="90" rx="18" fill="url(#phone)"/>
+      <rect x="18" y="18" width="102" height="18" rx="9" fill="#ffffff" opacity=".9"/>
+      <rect x="18" y="48" width="50" height="20" rx="6" fill="#d3a445"/>
+      <rect x="76" y="48" width="44" height="20" rx="6" fill="#7fc9b2"/>
+      <path d="M156 24h38M156 46h52M156 68h28" stroke="#2f7566" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <path d="M361 312 C414 312 426 312 474 312" class="line"/>
+
+  <g transform="translate(474 154)">
+    <rect class="card" width="295" height="316" rx="28"/>
+    <text x="34" y="44" class="eyebrow">STEP 2</text>
+    <text x="34" y="82" class="step-title">Arrive &amp; Ready</text>
+    <text x="34" y="114" class="copy">抵達場館時，票券已在手機裡</text>
+    <text x="34" y="138" class="copy">不需要翻找紙票或簡訊條碼</text>
+    <g transform="translate(89 164)">
+      <path d="M54 136h118V58c0-28-26-48-59-48S54 30 54 58z" fill="#e6f4ef" stroke="#2f7566" stroke-width="7"/>
+      <rect x="94" y="86" width="38" height="50" rx="8" fill="#2f7566"/>
+      <path d="M0 136h226" stroke="#14253a" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="113" cy="57" r="19" fill="#d3a445"/>
+      <path d="M103 57l8 8 17-22" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+
+  <path d="M769 312 C822 312 834 312 882 312" class="line"/>
+
+  <g transform="translate(882 154)">
+    <rect class="card" width="252" height="316" rx="28"/>
+    <text x="34" y="44" class="eyebrow">STEP 3</text>
+    <text x="34" y="82" class="step-title">Quick Pass</text>
+    <text x="34" y="114" class="copy">NFC / BLE / QR Code</text>
+    <text x="34" y="138" class="copy">在閘口快速驗證權限</text>
+    <g transform="translate(70 172)">
+      <circle cx="56" cy="56" r="54" fill="#e6f4ef" stroke="#2f7566" stroke-width="7"/>
+      <path d="M39 57l13 14 27-36" stroke="#2f7566" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M20 130c22 18 52 18 74 0M8 150c32 28 78 28 110 0" stroke="#d3a445" stroke-width="7" stroke-linecap="round" fill="none"/>
+    </g>
+  </g>
+
+  <g transform="translate(122 530)">
+    <rect class="panel" width="956" height="88" rx="24"/>
+    <g transform="translate(34 24)">
+      <circle cx="20" cy="20" r="20" class="green"/>
+      <text x="54" y="18" class="small">FAN GATE</text>
+      <text x="54" y="42" class="copy">球迷通道與一般入場</text>
+    </g>
+    <g transform="translate(334 24)">
+      <circle cx="20" cy="20" r="20" class="gold"/>
+      <text x="54" y="18" class="small">VIP / ZONES</text>
+      <text x="54" y="42" class="copy">VIP 專區、包廂與分區權限</text>
+    </g>
+    <g transform="translate(664 24)">
+      <circle cx="20" cy="20" r="20" class="navy"/>
+      <text x="54" y="18" class="small">EDGE VERIFY</text>
+      <text x="54" y="42" class="copy">邊緣驗證與離線備援</text>
+    </g>
+  </g>
+
+  <path d="M214 496 C214 516 214 516 214 530" class="dash"/>
+  <path d="M616 496 C616 516 616 516 616 530" class="dash"/>
+  <path d="M1008 496 C1008 516 1008 516 1008 530" class="dash"/>
+</svg>

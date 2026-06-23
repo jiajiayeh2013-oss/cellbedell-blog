@@ -1,41 +1,46 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const htmlFiles = [
-  "index.html",
-  "series-vivatech-2026.html",
-  "series-media-lens.html",
-  "series-hotel-tech.html",
-  "series-ai-humanities.html",
-  "series-style-life.html",
-  "thanks.html",
-  "posts/2026-06-19-vivatech-2026-highlights.html",
-  "posts/2026-06-20-ai-agent-hospitality-service.html",
-  "posts/2026-06-20-vivatech-2026-after-show-signals.html",
-];
+const rootDir = process.cwd();
+const ignoredDirs = new Set([".git", "node_modules", ".netlify"]);
+const htmlFiles = [];
+
+function walk(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (ignoredDirs.has(entry.name)) continue;
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      walk(fullPath);
+    } else if (entry.isFile() && entry.name.endsWith(".html")) {
+      htmlFiles.push(path.relative(rootDir, fullPath));
+    }
+  }
+}
+
+walk(rootDir);
 
 const missing = [];
 
 for (const file of htmlFiles) {
-  const html = fs.readFileSync(file, "utf8");
+  const html = fs.readFileSync(path.join(rootDir, file), "utf8");
   const dir = path.dirname(file);
   const attrPattern = /(?:href|src)="([^"]+)"/g;
 
   for (const match of html.matchAll(attrPattern)) {
     const url = match[1];
 
-    if (/^(https?:|mailto:|#)/.test(url) || url.startsWith("/.netlify/functions/")) {
+    if (/^(https?:|mailto:|tel:|#|data:)/.test(url) || url.startsWith("/.netlify/functions/")) {
       continue;
     }
 
     const cleanUrl = url.split("#")[0].split("?")[0];
-    if (!cleanUrl || cleanUrl.startsWith("/")) {
-      continue;
-    }
+    if (!cleanUrl) continue;
 
-    const target = path.normalize(path.join(dir, cleanUrl));
-    if (!fs.existsSync(target)) {
-      missing.push({ file, url, target });
+    const relativeUrl = cleanUrl.startsWith("/") ? cleanUrl.slice(1) : path.join(dir, cleanUrl);
+    const target = path.normalize(path.join(rootDir, relativeUrl));
+
+    if (!target.startsWith(rootDir) || !fs.existsSync(target)) {
+      missing.push({ file, url, target: path.relative(rootDir, target) });
     }
   }
 }

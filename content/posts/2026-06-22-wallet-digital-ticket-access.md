@@ -2,7 +2,7 @@
 status: Published
 date: 2026-06-22
 order: 2
-series: 旅館生活科技
+series: 數位票券
 title: 數位票券不只是 QR Code：從 Wallet 電子票券看通行權限的新入口
 seo_title: 數位票券與 Wallet 電子票券如何接上旅宿、活動報到與門禁管理
 seo_description: 從神御科技 VG Scutum、Cell Nexus 會員錢包與大型場館智慧通行案例出發，觀察數位票券如何從優惠券、會員卡、門票，延伸到旅宿入住、活動報到、分區權限與邊緣驗證。
