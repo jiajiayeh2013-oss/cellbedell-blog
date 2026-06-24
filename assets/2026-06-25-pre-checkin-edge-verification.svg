@@ -23,47 +23,51 @@
   <text x="82" y="208" fill="#6e5f55" font-family="Arial, sans-serif" font-size="25">手機 / 電腦完成 check-in 與付款，現場由邊緣設備驗證，Kiosk 只做確認與發卡。</text>
 
   <g transform="translate(74 300)">
-    <rect x="0" y="0" width="272" height="250" rx="34" fill="#fffaf3" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="272" height="276" rx="34" fill="#fffaf3" filter="url(#shadow)"/>
     <rect x="55" y="54" width="96" height="142" rx="18" fill="#29313a"/>
     <rect x="66" y="70" width="74" height="94" rx="10" fill="#dce9e0"/>
     <circle cx="103" cy="180" r="8" fill="#f7efe4"/>
     <rect x="165" y="80" width="48" height="88" rx="8" fill="#f3e0c8" stroke="#c76b3a" stroke-width="5"/>
     <path d="M176 116h26M176 136h20" stroke="#6f7f5d" stroke-width="7" stroke-linecap="round"/>
-    <text x="34" y="226" fill="#241a15" font-family="Georgia, serif" font-size="31" font-weight="700">1. 線上 pre check-in</text>
+    <text x="34" y="220" fill="#241a15" font-family="Georgia, serif" font-size="27" font-weight="700">1. 線上</text>
+    <text x="34" y="250" fill="#241a15" font-family="Georgia, serif" font-size="27" font-weight="700">pre check-in</text>
   </g>
 
   <g transform="translate(386 300)">
-    <rect x="0" y="0" width="272" height="250" rx="34" fill="#fffaf3" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="272" height="276" rx="34" fill="#fffaf3" filter="url(#shadow)"/>
     <circle cx="105" cy="108" r="64" fill="#d06a35"/>
     <path d="M76 108h58M105 79v58" stroke="#fffaf3" stroke-width="14" stroke-linecap="round"/>
     <rect x="156" y="72" width="62" height="86" rx="13" fill="#71815f"/>
     <path d="M171 106h32M171 130h22" stroke="#fffaf3" stroke-width="7" stroke-linecap="round"/>
-    <text x="34" y="226" fill="#241a15" font-family="Georgia, serif" font-size="31" font-weight="700">2. 付款與資料完成</text>
+    <text x="34" y="220" fill="#241a15" font-family="Georgia, serif" font-size="27" font-weight="700">2. 付款與</text>
+    <text x="34" y="250" fill="#241a15" font-family="Georgia, serif" font-size="27" font-weight="700">資料完成</text>
   </g>
 
   <g transform="translate(698 300)">
-    <rect x="0" y="0" width="272" height="250" rx="34" fill="url(#dark)" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="272" height="276" rx="34" fill="url(#dark)" filter="url(#shadow)"/>
     <rect x="70" y="62" width="132" height="96" rx="20" fill="#fffaf3"/>
     <path d="M101 111h70M136 76v70" stroke="#71815f" stroke-width="12" stroke-linecap="round"/>
     <path d="M80 178c42 34 102 34 144 0" stroke="#d06a35" stroke-width="12" stroke-linecap="round" fill="none"/>
-    <text x="34" y="226" fill="#fffaf3" font-family="Georgia, serif" font-size="31" font-weight="700">3. 取得金鑰 / 憑證</text>
+    <text x="34" y="220" fill="#fffaf3" font-family="Georgia, serif" font-size="27" font-weight="700">3. 取得金鑰</text>
+    <text x="34" y="250" fill="#fffaf3" font-family="Georgia, serif" font-size="27" font-weight="700">/ 憑證</text>
   </g>
 
   <g transform="translate(1010 300)">
-    <rect x="0" y="0" width="272" height="250" rx="34" fill="#fffaf3" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="272" height="276" rx="34" fill="#fffaf3" filter="url(#shadow)"/>
     <rect x="58" y="48" width="86" height="132" rx="20" fill="#71815f"/>
     <rect x="154" y="68" width="56" height="96" rx="14" fill="#f3e0c8" stroke="#d06a35" stroke-width="6"/>
     <path d="M86 97h31M86 123h21M174 112h16" stroke="#fffaf3" stroke-width="8" stroke-linecap="round"/>
-    <text x="34" y="226" fill="#241a15" font-family="Georgia, serif" font-size="31" font-weight="700">4. 現場邊緣驗證</text>
+    <text x="34" y="220" fill="#241a15" font-family="Georgia, serif" font-size="27" font-weight="700">4. 現場</text>
+    <text x="34" y="250" fill="#241a15" font-family="Georgia, serif" font-size="27" font-weight="700">邊緣驗證</text>
   </g>
 
   <path d="M346 425h40M658 425h40M970 425h40" stroke="#bd8f66" stroke-width="9" stroke-linecap="round"/>
   <path d="M372 409l20 16-20 16M684 409l20 16-20 16M996 409l20 16-20 16" fill="none" stroke="#bd8f66" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <g transform="translate(146 630)">
+  <g transform="translate(146 662)">
     <rect x="0" y="0" width="1108" height="150" rx="32" fill="#fffaf3" opacity=".85" filter="url(#shadow)"/>
     <text x="42" y="50" fill="#bd5830" font-family="Arial, sans-serif" font-size="21" letter-spacing="7">ON-SITE EXECUTION</text>
-    <text x="42" y="94" fill="#241a15" font-family="Georgia, serif" font-size="31" font-weight="700">Kiosk 確認旅客與訂單狀態後，直接發放對應房卡；</text>
-    <text x="42" y="132" fill="#241a15" font-family="Georgia, serif" font-size="31" font-weight="700">短時間斷網時，關鍵驗證仍由現場設備完成。</text>
+    <text x="42" y="94" fill="#241a15" font-family="Georgia, serif" font-size="28" font-weight="700">Kiosk 確認旅客與訂單狀態後，直接發放對應房卡；</text>
+    <text x="42" y="130" fill="#241a15" font-family="Georgia, serif" font-size="28" font-weight="700">短時間斷網時，關鍵驗證仍由現場設備完成。</text>
   </g>
 </svg>
