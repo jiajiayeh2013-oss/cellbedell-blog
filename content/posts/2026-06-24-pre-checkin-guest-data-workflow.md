@@ -1,6 +1,6 @@
 ---
 status: Published
-date: 2026-06-25
+date: 2026-06-24
 order: 2
 series: 旅館生活科技
 title: 旅客抵達前，哪些資料應該先被整理好？
