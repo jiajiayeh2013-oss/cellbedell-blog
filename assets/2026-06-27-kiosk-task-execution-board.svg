@@ -79,15 +79,15 @@
     <g transform="translate(42 476)">
       <rect width="288" height="118" rx="26" fill="#f4e2ce"/>
       <path d="M36 66c32-48 60-48 92 0" stroke="#d06435" stroke-width="11" fill="none" stroke-linecap="round"/>
-      <text x="98" y="50" fill="#211814" font-family="Georgia, serif" font-size="28" font-weight="700">通知櫃台</text>
-      <text x="98" y="82" fill="#5f5751" font-family="Arial, sans-serif" font-size="20">例外 / 夜班 / 房務</text>
+      <text x="128" y="50" fill="#211814" font-family="Georgia, serif" font-size="25" font-weight="700">通知櫃台</text>
+      <text x="128" y="82" fill="#5f5751" font-family="Arial, sans-serif" font-size="19">例外 / 夜班 / 房務</text>
     </g>
 
     <g transform="translate(364 476)">
       <rect width="288" height="118" rx="26" fill="#f7efe4"/>
       <path d="M34 40h50M34 62h76M34 84h42" stroke="#71815f" stroke-width="9" stroke-linecap="round"/>
-      <text x="98" y="50" fill="#211814" font-family="Georgia, serif" font-size="28" font-weight="700">留下紀錄</text>
-      <text x="98" y="82" fill="#5f5751" font-family="Arial, sans-serif" font-size="20">誰 / 何時 / 哪張卡</text>
+      <text x="122" y="50" fill="#211814" font-family="Georgia, serif" font-size="25" font-weight="700">留下紀錄</text>
+      <text x="122" y="82" fill="#5f5751" font-family="Arial, sans-serif" font-size="19">誰 / 何時 / 哪張卡</text>
     </g>
   </g>
 

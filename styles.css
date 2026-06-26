@@ -755,6 +755,11 @@ a {
   border-radius: 22px;
 }
 
+.post-page .article-figure img[src$=".svg"] {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .post-page .article-figure figcaption {
   max-width: 68ch;
   line-height: 1.6;
