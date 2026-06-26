@@ -1,8 +1,14 @@
 {
   "title": "Signal & Style 每週靈感筆記",
   "cadence": "weekly",
-  "updated": "2026-06-26T06:39:33.824Z",
+  "updated": "2026-06-26T10:00:17.092Z",
   "posts": [
+    {
+      "title": "數位票券的主體不是票，而是權限",
+      "date": "2026-06-26",
+      "summary": "數位票券的主體不是 QR Code 或手機畫面，而是可驗證、可更新、可核銷、可分區、可留下紀錄的權限。Wallet Pass 只是入口，真正的價值在後台規則、現場驗證與資料回流。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-26-digital-ticketing-main-architecture"
+    },
     {
       "title": "Kiosk 不只是螢幕，而是入住任務的執行點",
       "date": "2026-06-26",
@@ -26,12 +32,6 @@
       "date": "2026-06-23",
       "summary": "大型場館智慧通行的核心，是讓 Wallet 票券、NFC/BLE、閘口設備、分區權限與邊緣驗證共同支撐高人流入場，而不是只把紙票換成 QR Code。",
       "url": "https://cellbedell-blog.netlify.app/posts/2026-06-23-stadium-smart-access-wallet"
-    },
-    {
-      "title": "PMS 如何接上自助 Kiosk？從訂單資料到現場報到",
-      "date": "2026-06-23",
-      "summary": "PMS 接上自助 Kiosk 的重點，不只是把訂單顯示在螢幕上，而是讓旅客資料、付款狀態、房號、發卡、手機憑證與門禁權限變成一條可執行的現場流程。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-23-pms-kiosk-integration-checkin-flow"
     }
   ]
 }

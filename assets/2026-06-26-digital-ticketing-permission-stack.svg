@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">數位票券權限架構圖</title>
+  <desc id="desc">手機 Wallet 票券位於中央，周圍連接發券、會員、現場驗證、場域權限與資料回流，呈現數位票券背後的權限流程。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f2e8"/>
+      <stop offset="0.52" stop-color="#edf4ef"/>
+      <stop offset="1" stop-color="#f2eee5"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#152722"/>
+      <stop offset="1" stop-color="#31423a"/>
+    </linearGradient>
+    <linearGradient id="pass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0c66a"/>
+      <stop offset="1" stop-color="#d56146"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#1f2d29" flood-opacity="0.18"/>
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#9fb2aa" stroke-width="1" opacity="0.22"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#paper)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="74" y="64" width="1452" height="772" rx="36" fill="#fbfaf4" opacity="0.72"/>
+
+  <g font-family="Arial, 'Noto Sans TC', sans-serif">
+    <text x="132" y="144" fill="#172822" font-size="48" font-weight="700">Digital Ticket Permission Stack</text>
+    <text x="134" y="190" fill="#617069" font-size="24">發券、會員、驗證、場域與紀錄，構成一張票券背後真正的主體</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="640" y="190" width="320" height="548" rx="54" fill="url(#phone)"/>
+    <rect x="674" y="238" width="252" height="414" rx="28" fill="#f9f3e8"/>
+    <rect x="730" y="213" width="140" height="12" rx="6" fill="#f9f3e8" opacity="0.34"/>
+    <rect x="706" y="276" width="188" height="224" rx="26" fill="url(#pass)"/>
+    <text x="800" y="335" text-anchor="middle" fill="#fff9ef" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="26" font-weight="700">WALLET</text>
+    <text x="800" y="376" text-anchor="middle" fill="#fff9ef" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22">ACCESS PASS</text>
+    <rect x="738" y="416" width="124" height="50" rx="12" fill="#fff9ef" opacity="0.92"/>
+    <path d="M754 430h8v8h-8zm16 0h8v8h-8zm40 0h8v8h-8zm16 0h20v8h-20zm-72 16h24v8h-24zm40 0h8v8h-8zm24 0h8v8h-8zm16 0h12v8h-12z" fill="#21322d"/>
+    <rect x="706" y="532" width="188" height="34" rx="17" fill="#e7ded1"/>
+    <text x="800" y="556" text-anchor="middle" fill="#253630" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18" font-weight="700">身份 + 權限 + 狀態</text>
+    <circle cx="800" cy="690" r="26" fill="#f9f3e8" opacity="0.16"/>
+  </g>
+
+  <g fill="none" stroke="#456158" stroke-width="4" stroke-linecap="round" opacity="0.78">
+    <path d="M640 312 C520 280 426 258 320 250"/>
+    <path d="M640 448 C510 450 420 450 300 450"/>
+    <path d="M640 588 C514 626 428 652 314 664"/>
+    <path d="M960 312 C1084 280 1176 258 1280 250"/>
+    <path d="M960 448 C1092 450 1180 450 1300 450"/>
+    <path d="M960 588 C1084 626 1172 652 1288 664"/>
+  </g>
+
+  <g font-family="Arial, 'Noto Sans TC', sans-serif" filter="url(#shadow)">
+    <g>
+      <rect x="146" y="190" width="286" height="124" rx="22" fill="#ffffff"/>
+      <text x="190" y="238" fill="#172822" font-size="26" font-weight="700">發券系統</text>
+      <text x="190" y="276" fill="#617069" font-size="20">票種、活動、有效時間</text>
+    </g>
+    <g>
+      <rect x="126" y="390" width="326" height="124" rx="22" fill="#ffffff"/>
+      <text x="170" y="438" fill="#172822" font-size="26" font-weight="700">會員與權益</text>
+      <text x="170" y="476" fill="#617069" font-size="20">會員卡、點數、優惠券</text>
+    </g>
+    <g>
+      <rect x="150" y="604" width="306" height="124" rx="22" fill="#ffffff"/>
+      <text x="194" y="652" fill="#172822" font-size="26" font-weight="700">狀態規則</text>
+      <text x="194" y="690" fill="#617069" font-size="20">未使用、已核銷、已失效</text>
+    </g>
+    <g>
+      <rect x="1168" y="190" width="286" height="124" rx="22" fill="#ffffff"/>
+      <text x="1212" y="238" fill="#172822" font-size="26" font-weight="700">現場驗證</text>
+      <text x="1212" y="276" fill="#617069" font-size="20">QR、NFC、BLE、讀頭</text>
+    </g>
+    <g>
+      <rect x="1148" y="390" width="326" height="124" rx="22" fill="#ffffff"/>
+      <text x="1192" y="438" fill="#172822" font-size="26" font-weight="700">場域權限</text>
+      <text x="1192" y="476" fill="#617069" font-size="20">入口、分區、房門、公設</text>
+    </g>
+    <g>
+      <rect x="1144" y="604" width="336" height="124" rx="22" fill="#ffffff"/>
+      <text x="1188" y="652" fill="#172822" font-size="26" font-weight="700">資料回流</text>
+      <text x="1188" y="690" fill="#617069" font-size="20">入場、核銷、例外、轉換率</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, 'Noto Sans TC', sans-serif">
+    <rect x="536" y="776" width="528" height="48" rx="24" fill="#1c2b26" opacity="0.9"/>
+    <text x="800" y="808" text-anchor="middle" fill="#f8f3e8" font-size="22" font-weight="700">票券畫面只是入口；可驗證的權限才是主體</text>
+  </g>
+</svg>
