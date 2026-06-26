@@ -14,9 +14,9 @@ tags:
   - 權限管理
   - 會員錢包
   - 智慧場館
-hero_image: /assets/2026-06-26-digital-ticketing-permission-stack.svg
-hero_image_alt: 數位票券權限架構圖，手機 Wallet 票券連接發券系統、會員權益、狀態規則、現場驗證、場域權限與資料回流
-hero_image_credit: Cellbedell / 數位票券權限架構示意圖
+hero_image: /assets/2026-06-26-vgscutum-wallet-access-system.png
+hero_image_alt: VG Scutum Godspeed Wallet 通行系統示意圖，包含手機票券、Apple Wallet、Android Wallet、Kiosk 與現場讀取設備
+hero_image_credit: VG Scutum / Godspeed virtual key solution
 summary: 數位票券的主體不是 QR Code 或手機畫面，而是可驗證、可更新、可核銷、可分區、可留下紀錄的權限。Wallet Pass 只是入口，真正的價值在後台規則、現場驗證與資料回流。
 next_direction: Wallet 票券與旅宿入住憑證, 邊緣驗證與離線備援, 票券權限模型設計, 數位票券資料回流
 sources:
@@ -40,7 +40,7 @@ sources:
 
 ## 票券畫面只是入口
 
-![數位票券權限架構圖，手機 Wallet 票券連接發券系統、會員權益、狀態規則、現場驗證、場域權限與資料回流](/assets/2026-06-26-digital-ticketing-permission-stack.svg "Cellbedell / 數位票券權限架構示意圖")
+![VG Scutum Godspeed Wallet 通行系統示意圖，包含手機票券、Apple Wallet、Android Wallet、Kiosk 與現場讀取設備](/assets/2026-06-26-vgscutum-wallet-access-system.png "VG Scutum / Godspeed virtual key solution")
 
 使用者看到的是手機裡的一張票：可能是 Apple Wallet、Google Wallet、QR Code、NFC Pass，或活動頁面裡的一個核銷碼。
 
