@@ -1,8 +1,14 @@
 {
   "title": "Signal & Style 每週靈感筆記",
   "cadence": "weekly",
-  "updated": "2026-06-26T10:29:21.715Z",
+  "updated": "2026-07-03T06:39:10.301Z",
   "posts": [
+    {
+      "title": "PMS、AI Agent、發卡機與門禁設備如何串成一條線",
+      "date": "2026-06-29",
+      "summary": "智慧入住真正困難的不是讓旅客按下 Check-in，而是讓 PMS 裡的訂單、房號、入住時間與權限，透過 AI Agent 與現場邊緣設備，正確交給發卡機、門禁設備與手機憑證。當資料、任務、判斷與執行能串成一條線，自助入住才會從漂亮介面變成可靠流程。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-29-pms-card-encoder-access-control-line"
+    },
     {
       "title": "數位票券的主體不是票，而是權限",
       "date": "2026-06-26",
@@ -26,12 +32,6 @@
       "date": "2026-06-23",
       "summary": "會員錢包的核心不是多一張手機會員卡，而是把發券、領券、核銷、會員點數與轉換紀錄接回後台，讓優惠券變成會員營運的一部分。",
       "url": "https://cellbedell-blog.netlify.app/posts/2026-06-23-member-wallet-coupon-redemption"
-    },
-    {
-      "title": "球場與大型場館智慧通行：Wallet 票券如何支撐高人流入場？",
-      "date": "2026-06-23",
-      "summary": "大型場館智慧通行的核心，是讓 Wallet 票券、NFC/BLE、閘口設備、分區權限與邊緣驗證共同支撐高人流入場，而不是只把紙票換成 QR Code。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-23-stadium-smart-access-wallet"
     }
   ]
 }

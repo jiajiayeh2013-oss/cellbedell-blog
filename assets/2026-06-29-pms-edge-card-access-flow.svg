@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">PMS、AI Agent、邊緣設備、發卡機與門禁串接流程圖</title>
+  <desc id="desc">PMS 透過 API 傳送訂單、房號、入住時間與權限資料，AI Agent 將自然語言需求轉成任務，現場邊緣設備判斷後，觸發發卡機、Wallet 或 QR Code 憑證與門禁設備。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf3"/>
+      <stop offset="55%" stop-color="#f1e3d0"/>
+      <stop offset="100%" stop-color="#e2eadf"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#2c211c" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" rx="48" fill="url(#paper)"/>
+  <circle cx="1220" cy="130" r="154" fill="#fff7ec" opacity=".72"/>
+  <circle cx="165" cy="735" r="140" fill="#d06435" opacity=".11"/>
+
+  <text x="82" y="86" fill="#bd5830" font-family="Arial, sans-serif" font-size="25" letter-spacing="8">SYSTEM LINE</text>
+  <text x="82" y="150" fill="#211814" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700">從 PMS + Agent 到房門</text>
+  <text x="84" y="198" fill="#625850" font-family="Arial, sans-serif" font-size="24">資料與人話，都要變成可追蹤、可執行的現場權限。</text>
+
+  <g transform="translate(82 285)">
+    <rect width="250" height="210" rx="32" fill="#211814" filter="url(#softShadow)"/>
+    <text x="34" y="56" fill="#f4c542" font-family="Arial, sans-serif" font-size="20" letter-spacing="6">DATA CORE</text>
+    <text x="34" y="110" fill="#fffaf3" font-family="Georgia, serif" font-size="44" font-weight="700">PMS</text>
+    <text x="34" y="153" fill="#efe2d4" font-family="Arial, sans-serif" font-size="22">訂單 / 房號</text>
+    <text x="34" y="184" fill="#efe2d4" font-family="Arial, sans-serif" font-size="22">入住時間 / 狀態</text>
+  </g>
+
+  <path d="M358 390h115" stroke="#bd8f66" stroke-width="10" stroke-linecap="round"/>
+  <path d="M448 362l34 28-34 28" fill="none" stroke="#bd8f66" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="372" y="350" fill="#7b6a5f" font-family="Arial, sans-serif" font-size="19">API</text>
+
+  <g transform="translate(82 540)">
+    <rect width="250" height="118" rx="30" fill="#edf4ff" filter="url(#softShadow)"/>
+    <circle cx="52" cy="59" r="28" fill="#1f7fe5"/>
+    <text x="43" y="69" fill="#fffaf3" font-family="Arial, sans-serif" font-size="26" font-weight="700">AI</text>
+    <text x="96" y="50" fill="#211814" font-family="Georgia, serif" font-size="25" font-weight="700">AI Agent</text>
+    <text x="96" y="82" fill="#625850" font-family="Arial, sans-serif" font-size="18">人話轉成任務</text>
+  </g>
+
+  <path d="M332 598c72 0 104-70 174-130" stroke="#1f7fe5" stroke-width="7" stroke-linecap="round" fill="none" opacity=".8"/>
+  <path d="M490 462l24-2-8 22" fill="none" stroke="#1f7fe5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+
+  <g transform="translate(506 254)">
+    <rect width="350" height="274" rx="36" fill="#fffaf3" filter="url(#softShadow)"/>
+    <text x="42" y="62" fill="#bd5830" font-family="Arial, sans-serif" font-size="20" letter-spacing="6">EDGE NODE</text>
+    <text x="42" y="119" fill="#211814" font-family="Georgia, serif" font-size="39" font-weight="700">現場邊緣設備</text>
+    <rect x="42" y="152" width="266" height="80" rx="22" fill="#edf4ef"/>
+    <text x="70" y="185" fill="#211814" font-family="Georgia, serif" font-size="24" font-weight="700">判斷是否可執行</text>
+    <text x="70" y="214" fill="#5f5751" font-family="Arial, sans-serif" font-size="19">授權資料 / 時段 / 房號</text>
+  </g>
+
+  <path d="M880 390h115" stroke="#bd8f66" stroke-width="10" stroke-linecap="round"/>
+  <path d="M970 362l34 28-34 28" fill="none" stroke="#bd8f66" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="895" y="350" fill="#7b6a5f" font-family="Arial, sans-serif" font-size="19">LOCAL TASKS</text>
+
+  <g transform="translate(1030 218)">
+    <rect width="286" height="120" rx="28" fill="#f4e2ce" filter="url(#softShadow)"/>
+    <circle cx="56" cy="60" r="28" fill="#d06435"/>
+    <path d="M43 60h26M56 47v26" stroke="#fffaf3" stroke-width="8" stroke-linecap="round"/>
+    <text x="102" y="56" fill="#211814" font-family="Georgia, serif" font-size="27" font-weight="700">發卡機</text>
+    <text x="102" y="86" fill="#625850" font-family="Arial, sans-serif" font-size="19">寫入房卡權限</text>
+  </g>
+
+  <g transform="translate(1030 390)">
+    <rect width="286" height="120" rx="28" fill="#edf4ef" filter="url(#softShadow)"/>
+    <rect x="35" y="30" width="44" height="60" rx="12" fill="#71815f"/>
+    <path d="M47 60h20" stroke="#fffaf3" stroke-width="8" stroke-linecap="round"/>
+    <text x="102" y="56" fill="#211814" font-family="Georgia, serif" font-size="27" font-weight="700">門禁設備</text>
+    <text x="102" y="86" fill="#625850" font-family="Arial, sans-serif" font-size="19">房門 / 樓層 / 公區</text>
+  </g>
+
+  <g transform="translate(1030 562)">
+    <rect width="286" height="120" rx="28" fill="#f7efe4" filter="url(#softShadow)"/>
+    <rect x="34" y="30" width="48" height="60" rx="12" fill="#211814"/>
+    <path d="M47 60h22M58 49v22" stroke="#f4c542" stroke-width="7" stroke-linecap="round"/>
+    <text x="102" y="56" fill="#211814" font-family="Georgia, serif" font-size="27" font-weight="700">Wallet / QR</text>
+    <text x="102" y="86" fill="#625850" font-family="Arial, sans-serif" font-size="19">手機憑證與紀錄</text>
+  </g>
+
+  <g transform="translate(185 635)">
+    <rect width="700" height="92" rx="28" fill="#211814" opacity=".92"/>
+    <text x="40" y="39" fill="#fffaf3" font-family="Georgia, serif" font-size="26" font-weight="700">雲端同步管理，現場負責關鍵執行。</text>
+    <text x="40" y="68" fill="#e9ded1" font-family="Arial, sans-serif" font-size="19">斷線時，已授權的取卡與進門判斷仍應能在現場完成。</text>
+  </g>
+</svg>
