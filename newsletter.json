@@ -1,8 +1,14 @@
 {
   "title": "Signal & Style 每週靈感筆記",
   "cadence": "weekly",
-  "updated": "2026-07-11T05:37:11.906Z",
+  "updated": "2026-07-11T08:40:45.709Z",
   "posts": [
+    {
+      "title": "Mobile Access 正在變成標配：旅宿不能只準備手機鑰匙，還要設計多憑證共存",
+      "date": "2026-07-11",
+      "summary": "asmag 在 2026 年 7 月整理 mobile access control 的最新趨勢：手機憑證採用增加、Wallet 支援、強化身分驗證、實體與數位身份融合、雲端管理，以及多種通行方式共存。對旅宿來說，這不只是手機開門，而是要把旅客、PMS、Kiosk、Wallet、QR Code、NFC 房卡與門禁權限整理成同一套可管理流程。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-11-mobile-access-control-hotel-wallet-key"
+    },
     {
       "title": "生成式 AI 會改變品味嗎：從創作工具到判斷力的慢變化",
       "date": "2026-07-03",
@@ -26,12 +32,6 @@
       "date": "2026-06-26",
       "summary": "Kiosk 的下一步，不是把櫃台變成螢幕，而是把旅客操作變成現場任務。當 Kiosk 能觸發 PMS 更新、發卡、Wallet / QR Code、門禁權限與櫃台通知，自助入住才真的進入可管理的流程。",
       "url": "https://cellbedell-blog.netlify.app/posts/2026-06-26-kiosk-task-execution-point"
-    },
-    {
-      "title": "旅客抵達前，哪些資料應該先被整理好？",
-      "date": "2026-06-24",
-      "summary": "Pre check-in 的價值不是讓旅客提早填表，而是把訂單、身份、付款、金鑰與現場門禁權限先整理好，讓旅客到現場後只需要完成邊緣驗證與取卡。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-24-pre-checkin-guest-data-workflow"
     }
   ]
 }

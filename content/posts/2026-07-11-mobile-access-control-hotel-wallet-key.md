@@ -1,5 +1,5 @@
 ---
-status: Drafting
+status: Published
 date: 2026-07-11
 order: 5
 series: 旅館生活科技
@@ -15,9 +15,9 @@ tags:
   - Wallet Pass
   - 智慧門禁
   - PMS API
-hero_image: /assets/2026-06-27-wallet-nfc-card-create-key.jpeg
-hero_image_alt: 手機與 NFC 房卡在 Cellbedell 系統中建立金鑰，顯示 Wallet Pass、NFC card、QR code 或 Bluetooth 都能成為通行方式
-hero_image_credit: Cellbedell / Smart front desk system demo 影片截圖
+hero_image: /assets/2026-07-11-mobile-access-control-overview.jpg
+hero_image_alt: Cellbedell 智慧門禁與權限管理方案，整合手機通行、裝置管理、後台權限與 Wallet 憑證
+hero_image_credit: Cellbedell / V4 智慧門禁行動通行方案素材
 summary: asmag 在 2026 年 7 月整理 mobile access control 的最新趨勢：手機憑證採用增加、Wallet 支援、強化身分驗證、實體與數位身份融合、雲端管理，以及多種通行方式共存。對旅宿來說，這不只是手機開門，而是要把旅客、PMS、Kiosk、Wallet、QR Code、NFC 房卡與門禁權限整理成同一套可管理流程。
 next_direction: 行動憑證與實體房卡共存設計, 智慧入住斷網備援, AI Agent 如何管理門禁權限
 sources:
@@ -41,7 +41,7 @@ sources:
 
 ## 手機憑證正在從 nice-to-have 變成標配
 
-![手機與 NFC 房卡在系統中建立金鑰，顯示 Wallet Pass、NFC card、QR code 或 Bluetooth 都能成為通行方式](/assets/2026-06-27-wallet-nfc-card-create-key.jpeg "Cellbedell / Smart front desk system demo 影片截圖")
+![Cellbedell 智慧門禁與權限管理方案，整合手機通行、裝置管理、後台權限與 Wallet 憑證](/assets/2026-07-11-mobile-access-control-overview.jpg "Cellbedell / V4 智慧門禁行動通行方案素材")
 
 過去談行動鑰匙，常常像是在介紹一個高級飯店才會有的亮點功能。旅客完成 check-in 後，不必到櫃台拿卡，手機靠近門鎖就能進房，體驗很漂亮。
 
@@ -56,6 +56,8 @@ asmag 把 mobile wallet support 列為最新趨勢之一，特別提到 Apple Wa
 如果房卡或通行憑證能進到 Wallet，旅客的心理負擔會小很多。他不需要記得某個陌生 App 放在哪裡，只要像搭車、付款或出示票券一樣，把手機拿出來就好。
 
 但 Wallet 不是萬靈丹。它牽涉裝置相容性、發卡成本、系統整合、憑證生命週期與門禁設備支援。對中小旅宿來說，最務實的路線不是一開始就追求所有憑證都進 Wallet，而是先把 PMS、Kiosk、QR Code、NFC 房卡與現場邊緣設備的權限邏輯整理好，再逐步把 Wallet 放進同一條流程。
+
+![手機 Wallet 票券與既有門禁系統共存，讓既有控制器、邊緣設備與雲端後台一起管理通行權限](/assets/2026-07-11-mobile-access-existing-system-coexist.jpg "Cellbedell / V4 智慧門禁行動通行方案素材")
 
 ## 身分驗證會變得更細，不只是「有卡就能進」
 
@@ -81,6 +83,8 @@ mobile access 很適合用雲端管理，因為憑證可以遠端發放、更新
 
 比較理想的架構，是旅客在手機或電腦上完成 pre check-in 與付款，系統先建立可用的金鑰或通行任務；旅客到現場後，Kiosk 或邊緣設備確認訂單與憑證狀態，再直接發放房卡、驗證 QR Code，或讓門禁設備依照本地權限完成判斷。
 
+![邊緣運算門禁架構圖，顯示手機 Wallet 通行、本地邊緣設備、AWS / Google 雲端、權限管理與辦公空間門區之間的資料流](/assets/2026-07-11-edge-access-control-architecture.jpg "Cellbedell / V4 智慧門禁行動通行方案素材")
+
 ## 最後的答案不是全手機，而是多憑證共存
 
 asmag 文章最後有一個很值得旅宿業記住的觀點：mobile access 的未來不是全部變成手機，而是走向 balanced mix。也就是手機憑證、實體卡、QR Code、RFID、PIN、Bluetooth、甚至生物辨識，會依照不同使用者與風險場景一起存在。
@@ -95,4 +99,4 @@ asmag 文章最後有一個很值得旅宿業記住的觀點：mobile access 的
 
 這篇文章不是 asmag 原文翻譯，而是以它整理的 mobile access control 趨勢為起點，延伸到旅宿智慧入住的現場設計。對 Cellbedell Blog 來說，重點不是追一個最炫的開門方式，而是理解「通行憑證」如何從一張房卡，變成旅客住宿期間的身份、權限與服務入口。
 
-圖片使用 Cellbedell demo 影片截圖；外部趨勢與技術背景請參考下方來源。
+圖片使用 Cellbedell V4 智慧門禁行動通行方案素材與 demo 影片截圖；外部趨勢與技術背景請參考下方來源。
