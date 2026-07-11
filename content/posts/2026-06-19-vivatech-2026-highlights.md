@@ -1,7 +1,7 @@
 ---
 status: Published
 date: 2026-06-19
-series: VivaTech / 科技展觀察
+series: 國際科技展會
 title: 沒到現場，也要把今年巴黎最有風格的科技靈感帶回來
 subtitle: 從巴黎科技展出發，收集 AI、法國新創與未來生活提案。
 author: Cellbedell

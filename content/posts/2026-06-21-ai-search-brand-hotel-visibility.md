@@ -2,7 +2,7 @@
 status: Published
 date: 2026-06-21
 order: 1
-series: VivaTech / 科技展觀察
+series: 國際科技展會
 title: 當 AI 變成搜尋入口，品牌與飯店要學會被機器理解
 subtitle: 從 VivaTech 2026 的 LVMH Innovation Awards 出發，看 AI 搜尋如何改寫品牌、旅宿與生活服務被看見的方式。
 author: Cellbedell

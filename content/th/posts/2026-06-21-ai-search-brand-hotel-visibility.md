@@ -4,7 +4,7 @@ locale: th
 translation_key: 2026-06-21-ai-search-brand-hotel-visibility
 date: 2026-06-21
 order: 1
-series: vivatech
+series: tech-events
 title: เมื่อ AI กลายเป็นประตูค้นหา แบรนด์และโรงแรมต้องทำให้เครื่องเข้าใจ
 seo_title: AI Search, GEO และการมองเห็นของแบรนด์โรงแรม
 seo_description: จาก LVMH Innovation Awards ใน VivaTech 2026 มาดูว่า AI search และ GEO จะเปลี่ยนวิธีที่แบรนด์ โรงแรม และบริการถูกค้นพบอย่างไร.

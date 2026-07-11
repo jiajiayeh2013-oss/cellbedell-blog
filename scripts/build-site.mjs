@@ -6,9 +6,9 @@ const siteUrl = "https://cellbedell-blog.netlify.app";
 const postsDir = path.join(rootDir, "posts");
 const homeHeroImage = "/assets/2026-06-19-vivatech-hero.png";
 const blogName = "Signal & Style";
-const legacyBlogName = "Cellbedell Blog";
+const legacyBlogName = "Signal & Style Blog";
 const brandSubtitle = "Technology, culture, and future living notes";
-const defaultKeywords = "Signal & Style, Cellbedell Blog, Cellbedell, hospitality technology, AI search, future living, technology culture style";
+const defaultKeywords = "Signal & Style, Signal & Style Blog, Cellbedell, hospitality technology, AI search, future living, technology culture style";
 const buildNow = process.env.BUILD_NOW ? new Date(process.env.BUILD_NOW) : new Date();
 
 const locales = {
@@ -28,8 +28,8 @@ const locales = {
     editionNewsletter: "Weekly newsletter",
     homeH1: "把世界的新點子，帶回日常生活",
     homeDek: "觀察科技、設計、時尚、新創與未來城市，整理成讀者看得懂、也能帶回日常的靈感筆記。",
-    currentFocus: "VivaTech 2026 觀察",
-    currentFocusBody: "從巴黎科技展開始，收集 AI、新創、品牌美感與未來生活的線索；不做流水帳，改寫成生活語言。",
+    currentFocus: "國際科技展會觀察",
+    currentFocusBody: "從 VivaTech、CES、MWC、IFA 等國際科技展開始，收集 AI、新創、品牌美感與未來生活的線索；不做流水帳，改寫成生活語言。",
     currentSeriesCta: "閱讀目前系列",
     latestArticle: "最新文章",
     latestKicker: "Latest Article",
@@ -176,8 +176,8 @@ const locales = {
     editionNewsletter: "Weekly newsletter",
     homeH1: "พาไอเดียใหม่จากโลก กลับมาใกล้ชีวิตประจำวัน",
     homeDek: "บันทึกเชิงบรรณาธิการว่าด้วยเทคโนโลยี การออกแบบ แบรนด์ สตาร์ทอัพ และเมืองแห่งอนาคต ในภาษาที่อ่านง่ายและใช้ต่อได้.",
-    currentFocus: "VivaTech 2026 และเทคโนโลยีโรงแรม",
-    currentFocusBody: "เริ่มจากงานเทคโนโลยีที่ปารีส แล้วคัดสัญญาณสำคัญเรื่อง AI, สตาร์ทอัพ, แบรนด์ และอนาคตของการใช้ชีวิต.",
+    currentFocus: "งานเทคโนโลยีระดับโลกและเทคโนโลยีโรงแรม",
+    currentFocusBody: "เริ่มจาก VivaTech, CES, MWC และ IFA แล้วคัดสัญญาณสำคัญเรื่อง AI, สตาร์ทอัพ, แบรนด์ และอนาคตของการใช้ชีวิต.",
     currentSeriesCta: "อ่านซีรีส์ปัจจุบัน",
     latestArticle: "บทความล่าสุด",
     latestKicker: "Latest Article",
@@ -212,25 +212,25 @@ const locales = {
 };
 
 const series = {
-  vivatech: {
-    aliases: ["VivaTech / 科技展觀察", "vivatech", "VivaTech 2026"],
+  "tech-events": {
+    aliases: ["國際科技展會", "VivaTech / 科技展觀察", "vivatech", "VivaTech 2026", "tech-events"],
     file: {
-      "zh-Hant": "series-vivatech-2026.html",
-      en: "en/series-vivatech-2026.html",
-      ja: "ja/series-vivatech-2026.html",
-      th: "th/series-vivatech-2026.html",
+      "zh-Hant": "series-tech-events.html",
+      en: "en/series-tech-events.html",
+      ja: "ja/series-tech-events.html",
+      th: "th/series-tech-events.html",
     },
     label: {
-      "zh-Hant": "VivaTech 2026",
-      en: "VivaTech 2026",
-      ja: "VivaTech 2026",
-      th: "VivaTech 2026",
+      "zh-Hant": "國際科技展會",
+      en: "Global Tech Events",
+      ja: "国際テックイベント",
+      th: "งานเทคโนโลยีระดับโลก",
     },
     title: {
-      "zh-Hant": "VivaTech / 科技展觀察",
-      en: "VivaTech and Tech Event Notes",
-      ja: "VivaTech / テックイベント観察",
-      th: "VivaTech / บันทึกจากงานเทคโนโลยี",
+      "zh-Hant": "國際科技展會",
+      en: "Global Tech Event Notes",
+      ja: "国際テックイベント観察",
+      th: "บันทึกจากงานเทคโนโลยีระดับโลก",
     },
     description: {
       "zh-Hant": "從國際科技展整理 AI、新創、品牌與未來生活裡值得收藏的靈感。",
@@ -475,7 +475,7 @@ function getSeriesKey(value) {
   for (const [key, item] of Object.entries(series)) {
     if (item.aliases.includes(value)) return key;
   }
-  return "vivatech";
+  return "tech-events";
 }
 
 function localePath(localeCode, pathname = "/") {
@@ -1189,7 +1189,7 @@ function updateSeoFiles(postsByLocale) {
       allPages.push({
         loc: absoluteUrl(cleanPagePath(localeCode, "series", seriesKey)),
         lastmod: latestDate,
-        priority: seriesKey === "hotel-tech" || seriesKey === "vivatech" ? "0.8" : "0.6",
+        priority: seriesKey === "hotel-tech" || seriesKey === "tech-events" ? "0.8" : "0.6",
         alternates: seriesAlternates(seriesKey),
       });
     }

@@ -1,6 +1,6 @@
-# Cellbedell Blog 自動發文與 Slack 遠端工作路線
+# Signal & Style Blog 自動發文與 Slack 遠端工作路線
 
-本文件定義 Cellbedell Blog 要達成的兩個目標：
+本文件定義 Signal & Style Blog 要達成的兩個目標：
 
 1. 每天自動產生一篇可審稿的文章草稿。
 2. 出差或移動中，可以直接透過 Slack 與 Codex/AI 助手對話，完成選題、草稿、確認與發文。

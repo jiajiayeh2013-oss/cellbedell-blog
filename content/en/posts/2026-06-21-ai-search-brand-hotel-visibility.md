@@ -5,7 +5,7 @@ translation_key: 2026-06-21-ai-search-brand-hotel-visibility
 localized_slug: ai-search-hotel-brand-visibility
 date: 2026-06-21
 order: 1
-series: vivatech
+series: tech-events
 title: When AI Becomes the Search Front Door, Hotels Need to Be Machine-Readable
 seo_title: AI Search Visibility for Hotels and Hospitality Brands
 seo_description: How hotels can prepare for AI search and GEO by making location, guest experience, smart check-in, access control, and brand data easier for AI agents to understand.

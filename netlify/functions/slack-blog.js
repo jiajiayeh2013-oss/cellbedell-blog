@@ -6,12 +6,16 @@ const SERIES_RULES = [
     keywords: ["旅館", "飯店", "hotel", "hospitality", "concierge", "入住", "前台", "旅宿"],
   },
   {
+    series: "數位票券",
+    keywords: ["數位票券", "票券", "wallet", "pass", "qr", "nfc", "驗票", "核銷", "會員錢包", "場館"],
+  },
+  {
     series: "AI 與人文",
     keywords: ["ai 與人文", "人文", "倫理", "教育", "創作", "關係", "判斷"],
   },
   {
-    series: "VivaTech / 科技展觀察",
-    keywords: ["vivatech", "展會", "科技展", "新創", "startup", "巴黎"],
+    series: "國際科技展會",
+    keywords: ["vivatech", "ces", "mwc", "ifa", "展會", "科技展", "新創", "startup", "巴黎"],
   },
   {
     series: "國際科技媒體觀察",
@@ -138,7 +142,7 @@ const detectSeries = (input) => {
   const match = SERIES_RULES.find((rule) =>
     rule.keywords.some((keyword) => normalized.includes(keyword.toLowerCase())),
   );
-  return match ? match.series : "VivaTech / 科技展觀察";
+  return match ? match.series : "國際科技展會";
 };
 
 const extractUrls = (input) => {

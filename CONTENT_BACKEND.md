@@ -1,6 +1,6 @@
-# Cellbedell Blog 內容後台
+# Signal & Style Blog 內容後台
 
-Cellbedell Blog 目前有兩層管理方式：
+Signal & Style Blog 目前有兩層管理方式：
 
 1. Google Sheets：內容規劃、狀態追蹤、來源管理。
 2. Decap CMS：正式發文後台，路徑為 `/admin/`。

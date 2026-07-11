@@ -24,7 +24,7 @@ collections:
       - { label: "排程發布時間", name: "scheduled_publish_at", widget: "datetime", required: false, hint: "只有狀態為 Published 且排程時間已到，文章才會出現在前台。未填時使用發布日期。" }
       - { label: "負責人", name: "owner", widget: "string", required: false }
       - { label: "系列順序", name: "series_order", widget: "number", value_type: "int", required: false, hint: "同一系列內可用來標記第幾篇或手動排序。" }
-      - { label: "系列", name: "series", widget: "select", options: ["VivaTech / 科技展觀察", "國際科技媒體觀察", "旅館生活科技", "AI 與人文", "時尚與生活"] }
+      - { label: "系列", name: "series", widget: "select", options: ["國際科技展會", "國際科技媒體觀察", "旅館生活科技", "數位票券", "AI 與人文", "時尚與生活"] }
       - { label: "標題", name: "title", widget: "string" }
       - { label: "SEO 標題", name: "seo_title", widget: "string", required: false }
       - { label: "SEO 描述", name: "seo_description", widget: "text", required: false }
@@ -59,7 +59,7 @@ collections:
       - { label: "Scheduled Publish Time", name: "scheduled_publish_at", widget: "datetime", required: false, hint: "The article is public only when status is Published and this time has arrived. Falls back to Publish Date." }
       - { label: "Owner", name: "owner", widget: "string", required: false }
       - { label: "Series Order", name: "series_order", widget: "number", value_type: "int", required: false }
-      - { label: "Series", name: "series", widget: "select", options: ["vivatech", "media-lens", "hotel-tech", "ai-humanities", "style-life"] }
+      - { label: "Series", name: "series", widget: "select", options: ["tech-events", "media-lens", "hotel-tech", "digital-ticketing", "ai-humanities", "style-life"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "SEO Title", name: "seo_title", widget: "string", required: false }
       - { label: "SEO Description", name: "seo_description", widget: "text", required: false }
@@ -95,7 +95,7 @@ collections:
       - { label: "公開予定日時", name: "scheduled_publish_at", widget: "datetime", required: false, hint: "Published かつ予定日時を過ぎた記事だけが公開されます。未入力の場合は公開日を使います。" }
       - { label: "担当者", name: "owner", widget: "string", required: false }
       - { label: "シリーズ順", name: "series_order", widget: "number", value_type: "int", required: false }
-      - { label: "シリーズ", name: "series", widget: "select", options: ["vivatech", "media-lens", "hotel-tech", "ai-humanities", "style-life"] }
+      - { label: "シリーズ", name: "series", widget: "select", options: ["tech-events", "media-lens", "hotel-tech", "digital-ticketing", "ai-humanities", "style-life"] }
       - { label: "タイトル", name: "title", widget: "string" }
       - { label: "SEO タイトル", name: "seo_title", widget: "string", required: false }
       - { label: "SEO 説明", name: "seo_description", widget: "text", required: false }
@@ -124,7 +124,7 @@ collections:
     summary: "{{fields.planned_publish_at}} / {{fields.series}} / {{title}}"
     fields:
       - { label: "主題標題", name: "title", widget: "string" }
-      - { label: "系列", name: "series", widget: "select", options: ["vivatech", "media-lens", "hotel-tech", "ai-humanities", "style-life"] }
+      - { label: "系列", name: "series", widget: "select", options: ["tech-events", "media-lens", "hotel-tech", "digital-ticketing", "ai-humanities", "style-life"] }
       - { label: "預計發布時間", name: "planned_publish_at", widget: "datetime" }
       - { label: "狀態", name: "status", widget: "select", options: ["Idea", "Drafting", "Review", "Ready", "Scheduled", "Published", "Archived"], default: "Idea" }
       - { label: "負責人", name: "owner", widget: "string", required: false }
@@ -136,9 +136,9 @@ collections:
   - name: "series"
     label: "系列頁"
     files:
-      - label: "VivaTech / 科技展觀察"
-        name: "vivatech"
-        file: "content/series/vivatech-2026.md"
+      - label: "國際科技展會"
+        name: "tech_events"
+        file: "content/series/tech-events.md"
         fields:
           - { label: "標題", name: "title", widget: "string" }
           - { label: "副標", name: "subtitle", widget: "text" }
@@ -155,6 +155,14 @@ collections:
       - label: "旅館生活科技"
         name: "hotel_tech"
         file: "content/series/hotel-tech.md"
+        fields:
+          - { label: "標題", name: "title", widget: "string" }
+          - { label: "副標", name: "subtitle", widget: "text" }
+          - { label: "讀者承諾", name: "reader_promise", widget: "text" }
+          - { label: "狀態", name: "status", widget: "select", options: ["Active", "Ready", "Paused"], default: "Ready" }
+      - label: "數位票券"
+        name: "digital_ticketing"
+        file: "content/series/digital-ticketing.md"
         fields:
           - { label: "標題", name: "title", widget: "string" }
           - { label: "副標", name: "subtitle", widget: "text" }

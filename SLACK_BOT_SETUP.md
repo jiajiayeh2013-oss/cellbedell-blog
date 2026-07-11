@@ -1,4 +1,4 @@
-# Cellbedell Blog Slack Bot 設定
+# Signal & Style Blog Slack Bot 設定
 
 本文件說明如何把 Slack 接到 Netlify Function，讓你在 Slack 裡觸發文章草稿。
 

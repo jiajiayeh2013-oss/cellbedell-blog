@@ -5,6 +5,26 @@
 [functions."weekly-newsletter"]
   schedule = "0 1 * * 1"
 
+[[redirects]]
+  from = "/series-vivatech-2026"
+  to = "/series-tech-events"
+  status = 301
+
+[[redirects]]
+  from = "/en/series-vivatech-2026"
+  to = "/en/series-tech-events"
+  status = 301
+
+[[redirects]]
+  from = "/ja/series-vivatech-2026"
+  to = "/ja/series-tech-events"
+  status = 301
+
+[[redirects]]
+  from = "/th/series-vivatech-2026"
+  to = "/th/series-tech-events"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

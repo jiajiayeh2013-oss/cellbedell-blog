@@ -5,7 +5,7 @@ translation_key: 2026-06-21-ai-search-brand-hotel-visibility
 localized_slug: ai-search-hotel-brand-visibility
 date: 2026-06-21
 order: 1
-series: vivatech
+series: tech-events
 title: AI検索が入口になる時代、ホテルは「機械に理解される情報」を整える必要がある
 seo_title: ホテルのAI検索対策とGEO ブランド可視性
 seo_description: AI検索とGEOの時代に、ホテルが交通、スマートチェックイン、モバイルキー、施設情報、口コミ対応をどう整理すべきかを解説します。

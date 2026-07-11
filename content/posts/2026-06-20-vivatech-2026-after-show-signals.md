@@ -2,7 +2,7 @@
 status: Published
 date: 2026-06-20
 order: 1
-series: VivaTech / 科技展觀察
+series: 國際科技展會
 title: VivaTech 2026 最後一天之後，哪些科技值得繼續追
 subtitle: 從 AI agent、科技主權到品牌創新，整理展後真正可能留下來的生活科技訊號。
 author: Cellbedell

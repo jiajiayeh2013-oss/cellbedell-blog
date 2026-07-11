@@ -1,8 +1,14 @@
 {
   "title": "Signal & Style 每週靈感筆記",
   "cadence": "weekly",
-  "updated": "2026-07-03T06:39:10.301Z",
+  "updated": "2026-07-11T05:37:11.906Z",
   "posts": [
+    {
+      "title": "生成式 AI 會改變品味嗎：從創作工具到判斷力的慢變化",
+      "date": "2026-07-03",
+      "summary": "生成式 AI 讓更多人能快速做出看起來完整的作品，但品味不只是在產出，而是在看見差異、理解脈絡、做出選擇並願意刪掉不適合的版本。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-22-ai-humanities-taste-judgment"
+    },
     {
       "title": "PMS、AI Agent、發卡機與門禁設備如何串成一條線",
       "date": "2026-06-29",
@@ -26,12 +32,6 @@
       "date": "2026-06-24",
       "summary": "Pre check-in 的價值不是讓旅客提早填表，而是把訂單、身份、付款、金鑰與現場門禁權限先整理好，讓旅客到現場後只需要完成邊緣驗證與取卡。",
       "url": "https://cellbedell-blog.netlify.app/posts/2026-06-24-pre-checkin-guest-data-workflow"
-    },
-    {
-      "title": "會員錢包與優惠券核銷：從領券到回訪，怎麼接成一條營運流程？",
-      "date": "2026-06-23",
-      "summary": "會員錢包的核心不是多一張手機會員卡，而是把發券、領券、核銷、會員點數與轉換紀錄接回後台，讓優惠券變成會員營運的一部分。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-23-member-wallet-coupon-redemption"
     }
   ]
 }

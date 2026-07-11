@@ -118,5 +118,5 @@ createServer(async (request, response) => {
     send(response, 500, { "Content-Type": "text/plain; charset=utf-8" }, "Internal Server Error");
   }
 }).listen(port, () => {
-  console.log(`Cellbedell Blog preview: http://localhost:${port}`);
+  console.log(`Signal & Style Blog preview: http://localhost:${port}`);
 });

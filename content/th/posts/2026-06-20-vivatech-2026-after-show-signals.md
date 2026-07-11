@@ -4,7 +4,7 @@ locale: th
 translation_key: 2026-06-20-vivatech-2026-after-show-signals
 date: 2026-06-20
 order: 1
-series: vivatech
+series: tech-events
 title: หลังวันสุดท้ายของ VivaTech 2026 เทคโนโลยีอะไรที่ควรติดตามต่อ
 seo_title: VivaTech 2026 หลังจบงาน เทคโนโลยีที่ควรติดตาม
 seo_description: สรุปสัญญาณหลัง VivaTech 2026 ตั้งแต่ AI agent, tech sovereignty, real-time translation, health tech ไปจนถึง brand technology.

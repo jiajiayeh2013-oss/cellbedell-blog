@@ -3,7 +3,7 @@ status: Published
 locale: th
 translation_key: 2026-06-19-vivatech-2026-highlights
 date: 2026-06-19
-series: vivatech
+series: tech-events
 title: ไม่ได้ไปหน้างาน ก็ยังเก็บแรงบันดาลใจเทคโนโลยีจากปารีสกลับมาได้
 seo_title: VivaTech 2026 กับไอเดียเทคโนโลยีจากปารีส
 seo_description: บันทึกเปิดซีรีส์ VivaTech 2026 ว่าด้วย AI, สตาร์ทอัพฝรั่งเศส, แบรนด์ และสัญญาณของ future living.

@@ -1,4 +1,5 @@
 {
+  "name": "signal-style-blog",
   "dependencies": {
     "@netlify/blobs": "^9.1.2"
   },

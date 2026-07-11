@@ -1,5 +1,27 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/series-vivatech-2026",
+      "destination": "/series-tech-events",
+      "permanent": true
+    },
+    {
+      "source": "/en/series-vivatech-2026",
+      "destination": "/en/series-tech-events",
+      "permanent": true
+    },
+    {
+      "source": "/ja/series-vivatech-2026",
+      "destination": "/ja/series-tech-events",
+      "permanent": true
+    },
+    {
+      "source": "/th/series-vivatech-2026",
+      "destination": "/th/series-tech-events",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

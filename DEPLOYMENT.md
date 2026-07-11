@@ -1,4 +1,4 @@
-# Cellbedell Blog 部署與上線流程
+# Signal & Style Blog 部署與上線流程
 
 這個網站是純靜態多頁網站，不需要 build step。部署時把整個資料夾作為網站根目錄即可。
 
@@ -49,7 +49,7 @@ Netlify 需要設定以下環境變數：
 - `MAILGUN_API_KEY`：Mailgun API key
 - `MAILGUN_DOMAIN`：Mailgun 已驗證的寄件網域，例如 `mg.cellbedell.com`
 - `MAILGUN_API_BASE_URL`：選填，預設 `https://api.mailgun.net`；若使用 EU 區域可改成 `https://api.eu.mailgun.net`
-- `NEWSLETTER_FROM`：寄件人，例如 `Cellbedell Blog <hello@your-domain.com>`
+- `NEWSLETTER_FROM`：寄件人，例如 `Signal & Style Blog <hello@your-domain.com>`
 - `NEWSLETTER_NOTIFY_TO`：站方通知收件信箱
 - `NEWSLETTER_LIST_ADDRESS`：選填，Mailgun mailing list 地址；未設定時預設使用 `weekly@MAILGUN_DOMAIN`
 - `SITE_URL`：選填，週報 function 讀取 `newsletter.json` 的站台網址；預設 `https://cellbedell-blog.netlify.app`
@@ -82,7 +82,7 @@ npm start
 ## 上線前檢查
 
 - 首頁：`index.html`
-- VivaTech 系列頁：`series-vivatech-2026.html`
+- 國際科技展會系列頁：`series-tech-events.html`
 - 第一篇文章：`posts/2026-06-19-vivatech-2026-highlights.html`
 - 圖片資料夾：`assets/`
 - 共用樣式：`styles.css`
@@ -96,7 +96,7 @@ npm run check:links
 每次新增文章後，記得同步更新：
 
 1. `index.html`
-2. `series-vivatech-2026.html`
+2. `series-tech-events.html`
 3. 新文章頁
 4. 圖片來源與參考來源
 

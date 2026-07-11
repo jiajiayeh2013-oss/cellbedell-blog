@@ -1,4 +1,4 @@
-# Cellbedell Blog 工作主軸
+# Signal & Style Blog 工作主軸
 
 這個專案分成兩條主線進行：
 
@@ -15,12 +15,12 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 
 ### 目標
 
-把 Cellbedell Blog 做成一個可長期擴充的靜態多頁網站，而不是只服務單一文章或單一活動。
+把 Signal & Style Blog 做成一個可長期擴充的靜態多頁網站，而不是只服務單一文章或單一活動。
 
 ### 目前網站結構
 
 - `index.html`：部落格首頁，放最新文章、系列入口、每日更新清單。
-- `series-vivatech-2026.html`：VivaTech 2026 系列總覽頁。
+- `series-tech-events.html`：國際科技展會系列總覽頁。
 - `posts/`：每日文章與系列文章存放位置。
 - `assets/`：文章圖片、主視覺與引用圖片存放位置。
 - `styles.css`：全站共用視覺樣式。
@@ -39,7 +39,7 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 
 ### 未來系列方向
 
-- VivaTech / 科技展觀察
+- 國際科技展會
 - 國際科技媒體觀察
 - 旅館生活科技
 - AI 與人文
@@ -53,7 +53,7 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 
 ### 目標
 
-在 VivaTech 2026 展會期間，每天整理最新資訊，產出一篇可發布的繁體中文 blog 文章。文章不是單純新聞整理，而是要符合 Cellbedell Blog 的風格：科技、設計、時尚、新創、生活方式與未來城市的混合觀察。
+在 VivaTech 2026 展會期間，每天整理最新資訊，產出一篇可發布的繁體中文 blog 文章。文章不是單純新聞整理，而是要符合 Signal & Style Blog 的風格：科技、設計、時尚、新創、生活方式與未來城市的混合觀察。
 
 ### 每日流程
 
@@ -72,7 +72,7 @@ https://docs.google.com/spreadsheets/d/1f5pOv6S8H-cJ1IWsq2kOU4dqJnqvDfWq8m5a_IDu
 - 主標題
 - 副標或導言
 - 發布日期
-- 系列名稱：VivaTech / 科技展觀察
+- 系列名稱：國際科技展會
 - Tags
 - 主圖與圖片來源
 - 3 到 5 個重點段落

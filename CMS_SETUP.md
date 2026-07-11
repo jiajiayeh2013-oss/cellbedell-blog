@@ -1,4 +1,4 @@
-# Cellbedell Blog 發文後台設定
+# Signal & Style Blog 發文後台設定
 
 網站已加入 Decap CMS 後台骨架，GitHub repository 也已建立。
 
