@@ -1,37 +1,37 @@
 {
   "title": "Signal & Style 每週靈感筆記",
   "cadence": "weekly",
-  "updated": "2026-07-11T09:22:20.397Z",
+  "updated": "2026-08-05T12:40:16.562Z",
   "posts": [
     {
-      "title": "Mobile Access 正在變成標配：旅宿不能只準備手機鑰匙，還要設計多憑證共存",
-      "date": "2026-07-11",
-      "summary": "asmag 在 2026 年 7 月整理 mobile access control 的最新趨勢：手機憑證採用增加、Wallet 支援、強化身分驗證、實體與數位身份融合、雲端管理，以及多種通行方式共存。對旅宿來說，這不只是手機開門，而是要把旅客、PMS、Kiosk、Wallet、QR Code、NFC 房卡與門禁權限整理成同一套可管理流程。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-11-mobile-access-control-hotel-wallet-key"
+      "title": "AI 進辦公室後，人的判斷力要放在哪裡？",
+      "date": "2026-08-02",
+      "summary": "AI 進入辦公室後，人的價值會從親手完成每一個步驟，移到定義問題、檢查脈絡、修正輸出、承擔決策與保留組織記憶。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-08-02-ai-humanities-workplace-judgment"
     },
     {
-      "title": "生成式 AI 會改變品味嗎：從創作工具到判斷力的慢變化",
-      "date": "2026-07-03",
-      "summary": "生成式 AI 讓更多人能快速做出看起來完整的作品，但品味不只是在產出，而是在看見差異、理解脈絡、做出選擇並願意刪掉不適合的版本。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-22-ai-humanities-taste-judgment"
+      "title": "Pre Check-in 不只是填表：身份、付款與房卡權限要怎麼先整理好？",
+      "date": "2026-07-30",
+      "summary": "Pre check-in 應該把旅客資料、付款授權、身份確認、房號分配與房卡權限先整理好，讓現場報到從資料輸入變成驗證與執行。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-30-precheckin-identity-payment-key-flow"
     },
     {
-      "title": "PMS、AI Agent、發卡機與門禁設備如何串成一條線",
-      "date": "2026-06-29",
-      "summary": "智慧入住真正困難的不是讓旅客按下 Check-in，而是讓 PMS 裡的訂單、房號、入住時間與權限，透過 AI Agent 與現場邊緣設備，正確交給發卡機、門禁設備與手機憑證。當資料、任務、判斷與執行能串成一條線，自助入住才會從漂亮介面變成可靠流程。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-29-pms-card-encoder-access-control-line"
+      "title": "AI 陪伴產品要怎麼設計安全邊界？從使用時間到真人轉介",
+      "date": "2026-07-27",
+      "summary": "AI 陪伴產品的成熟，不只在於更會安慰人，也在於能清楚揭露自身限制、提醒使用節奏、辨識高風險情境，並在需要時把使用者導回真人支持。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-27-ai-companion-safety-boundaries"
     },
     {
-      "title": "數位票券的主體不是票，而是權限",
-      "date": "2026-06-26",
-      "summary": "數位票券的主體不是 QR Code 或手機畫面，而是可驗證、可更新、可核銷、可分區、可留下紀錄的權限。Wallet Pass 只是入口，真正的價值在後台規則、現場驗證與資料回流。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-26-digital-ticketing-main-architecture"
+      "title": "下半年想看中國機器人產業，該從哪幾個展會開始",
+      "date": "2026-07-27",
+      "summary": "2026 下半年中國大陸機器人展會密度很高：北京看全球發布與公共展示，深圳看華南供應鏈與應用落地，上海看工業製造與人形機器人全產業鏈。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-27-mainland-china-robotics-expo-map"
     },
     {
-      "title": "Kiosk 不只是螢幕，而是入住任務的執行點",
-      "date": "2026-06-26",
-      "summary": "Kiosk 的下一步，不是把櫃台變成螢幕，而是把旅客操作變成現場任務。當 Kiosk 能觸發 PMS 更新、發卡、Wallet / QR Code、門禁權限與櫃台通知，自助入住才真的進入可管理的流程。",
-      "url": "https://cellbedell-blog.netlify.app/posts/2026-06-26-kiosk-task-execution-point"
+      "title": "智慧入住斷網時怎麼辦？邊緣驗證才是旅宿現場的安全感",
+      "date": "2026-07-24",
+      "summary": "智慧入住的安全感來自現場可執行。短暫斷網時，已授權的訂單、身份、付款與房卡權限應能透過邊緣設備完成驗證、發卡與基本紀錄。",
+      "url": "https://cellbedell-blog.netlify.app/posts/2026-07-24-offline-smart-checkin-edge-backup"
     }
   ]
 }

@@ -1,11 +1,11 @@
 ---
 title: "當 AI 變成學習同伴：寫作、提問與理解能力會變好嗎？"
 series: ai-humanities
-planned_publish_at: 2026-07-08T09:00:00+08:00
-status: Idea
+planned_publish_at: 2026-07-13T21:00:00+08:00
+status: Published
 owner: ""
 locale: zh-Hant
-post_slug: ""
+post_slug: "2026-07-13-ai-humanities-learning-writing"
 summary: "從學生與知識工作者的日常使用切入，討論 AI 工具如何改變寫作、查資料、提問與自我修正的過程。"
 notes: |
   核心問題：AI 是讓人更依賴答案，還是能逼人問出更好的問題？

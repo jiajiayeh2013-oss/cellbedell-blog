@@ -2,10 +2,10 @@
 title: "AI 陪伴感從哪裡來：人機關係裡的安慰、投射與界線"
 series: ai-humanities
 planned_publish_at: 2026-07-15T09:00:00+08:00
-status: Idea
+status: Scheduled
 owner: ""
 locale: zh-Hant
-post_slug: ""
+post_slug: "2026-07-15-ai-humanities-companion"
 summary: "觀察聊天機器人與 AI 伴侶產品如何讓使用者產生陪伴感，並討論情感互動、信任與產品責任。"
 notes: |
   核心問題：AI 的陪伴感是真實關係、情緒介面，還是兩者之間的新型態？
