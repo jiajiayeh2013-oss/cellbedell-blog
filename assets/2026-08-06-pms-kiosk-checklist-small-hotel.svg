@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">中小旅宿導入 PMS x Kiosk 的 10 點檢查清單</title>
+  <desc id="desc">奶油色背景上的旅宿科技檢查清單示意圖，包含 PMS、Kiosk、付款、房卡、門禁、斷網備援與人員 SOP。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbf5ec"/>
+      <stop offset="0.55" stop-color="#efe1ce"/>
+      <stop offset="1" stop-color="#d9c4a8"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf3"/>
+      <stop offset="1" stop-color="#efe1d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#5a3a27" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .kicker{font-family:Arial, sans-serif;font-size:32px;letter-spacing:14px;fill:#c65f32;font-weight:700}
+      .title{font-family:Georgia, 'Times New Roman', serif;font-size:78px;fill:#241a16;font-weight:700}
+      .subtitle{font-family:Arial, sans-serif;font-size:31px;fill:#75695f;font-weight:600}
+      .small{font-family:Arial, sans-serif;font-size:25px;fill:#75695f;font-weight:700}
+      .label{font-family:Georgia, 'Times New Roman', serif;font-size:34px;fill:#241a16;font-weight:700}
+      .num{font-family:Arial, sans-serif;font-size:30px;fill:#fff;font-weight:800}
+      .note{font-family:Arial, sans-serif;font-size:23px;fill:#6d5e53;font-weight:600}
+      .line{stroke:#b9906c;stroke-width:6;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1370" cy="160" r="150" fill="#fff7ee" opacity="0.7"/>
+  <circle cx="160" cy="840" r="155" fill="#d76a34" opacity="0.12"/>
+  <circle cx="120" cy="160" r="125" fill="#fff7ee" opacity="0.45"/>
+  <g transform="translate(105 92)">
+    <text class="kicker" x="0" y="0">PMS x KIOSK CHECKLIST</text>
+    <text class="title" x="0" y="88">中小旅宿導入前，先看這 10 點</text>
+    <text class="subtitle" x="2" y="145">從資料、付款、發卡、門禁到斷網備援，把自助入住變成可執行的現場流程。</text>
+  </g>
+  <g transform="translate(105 260)" filter="url(#shadow)">
+    <rect x="0" y="0" width="1390" height="620" rx="44" fill="url(#card)" stroke="#dfd2c3" stroke-width="3"/>
+    <g transform="translate(55 58)">
+      <rect x="0" y="0" width="390" height="505" rx="34" fill="#2b201b"/>
+      <text class="kicker" x="42" y="66" fill="#f3c65b">GUEST FLOW</text>
+      <rect x="70" y="116" width="104" height="148" rx="26" fill="#fffaf3"/>
+      <rect x="91" y="137" width="62" height="90" rx="12" fill="#dceae1"/>
+      <circle cx="122" cy="242" r="10" fill="#2b201b"/>
+      <rect x="214" y="128" width="95" height="124" rx="22" fill="#748864"/>
+      <line class="line" x1="238" y1="168" x2="286" y2="168" stroke="#fffaf3"/>
+      <line class="line" x1="238" y1="204" x2="286" y2="204" stroke="#fffaf3"/>
+      <text class="label" x="42" y="330" fill="#fffaf3">旅客看到的是</text>
+      <text class="label" x="42" y="380" fill="#fffaf3">一段順的入住</text>
+      <line x1="42" y1="414" x2="330" y2="414" stroke="#c99b72" stroke-width="4"/>
+      <text class="note" x="42" y="462" fill="#efe1d1">手機預辦、現場驗證、</text>
+      <text class="note" x="42" y="496" fill="#efe1d1">快速取卡或直接通行。</text>
+    </g>
+    <g transform="translate(510 58)">
+      <rect x="0" y="0" width="780" height="505" rx="34" fill="#fffaf3"/>
+      <text class="kicker" x="42" y="66">SYSTEM CHECK</text>
+      <text class="label" x="42" y="124">背後要先確認 10 件事</text>
+      <g transform="translate(42 168)">
+        <g>
+          <rect x="0" y="0" width="320" height="74" rx="23" fill="#e5efe6"/>
+          <circle cx="40" cy="37" r="24" fill="#748864"/><text class="num" x="31" y="48">1</text>
+          <text class="small" x="82" y="32">PMS API 可用</text><text class="note" x="82" y="60">訂單 / 房號 / 狀態</text>
+        </g>
+        <g transform="translate(365 0)">
+          <rect x="0" y="0" width="320" height="74" rx="23" fill="#f1dbc2"/>
+          <circle cx="40" cy="37" r="24" fill="#d66a34"/><text class="num" x="31" y="48">2</text>
+          <text class="small" x="82" y="32">Pre Check-in</text><text class="note" x="82" y="60">身份 / 付款 / 抵達</text>
+        </g>
+        <g transform="translate(0 104)">
+          <rect x="0" y="0" width="320" height="74" rx="23" fill="#f7efe6"/>
+          <circle cx="40" cy="37" r="24" fill="#2b201b"/><text class="num" x="31" y="48">3</text>
+          <text class="small" x="82" y="32">Kiosk 任務</text><text class="note" x="82" y="60">驗證 / 引導 / 觸發</text>
+        </g>
+        <g transform="translate(365 104)">
+          <rect x="0" y="0" width="320" height="74" rx="23" fill="#e5efe6"/>
+          <circle cx="40" cy="37" r="24" fill="#748864"/><text class="num" x="31" y="48">4</text>
+          <text class="small" x="82" y="32">發卡與憑證</text><text class="note" x="82" y="60">NFC / QR / Wallet</text>
+        </g>
+        <g transform="translate(0 208)">
+          <rect x="0" y="0" width="320" height="74" rx="23" fill="#f1dbc2"/>
+          <circle cx="40" cy="37" r="24" fill="#d66a34"/><text class="num" x="31" y="48">5</text>
+          <text class="small" x="82" y="32">門禁權限</text><text class="note" x="82" y="60">區域 / 時段 / 撤回</text>
+        </g>
+        <g transform="translate(365 208)">
+          <rect x="0" y="0" width="320" height="74" rx="23" fill="#f7efe6"/>
+          <circle cx="40" cy="37" r="24" fill="#2b201b"/><text class="num" x="31" y="48">6</text>
+          <text class="small" x="82" y="32">斷網備援</text><text class="note" x="82" y="60">本地驗證 / 同步</text>
+        </g>
+        <g transform="translate(0 312)">
+          <rect x="0" y="0" width="685" height="82" rx="26" fill="#efe1d1"/>
+          <text class="small" x="34" y="36">7 例外 SOP　8 隱私紀錄　9 人員分工　10 逐步導入</text>
+          <text class="note" x="34" y="66">先跑通一條入住線，再逐步加上 AI agent、Wallet 與更多場景。</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <text class="note" x="105" y="930">圖片來源：Cellbedell / PMS x Kiosk 導入檢查清單示意圖</text>
+</svg>
