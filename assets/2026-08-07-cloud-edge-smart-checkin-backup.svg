@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">智慧入住的雲端與邊緣分工</title>
+  <desc id="desc">示意圖說明雲端管理 PMS 同步、設定與報表，現場邊緣層負責 Kiosk 驗證、發卡、門禁判斷與離線紀錄。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbf5ec"/>
+      <stop offset="0.52" stop-color="#efe3d3"/>
+      <stop offset="1" stop-color="#d7c2a7"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#e2edf4"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf3"/>
+      <stop offset="1" stop-color="#f0ddc8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#493023" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .kicker{font-family:Arial, sans-serif;font-size:32px;letter-spacing:13px;fill:#c65f32;font-weight:700}
+      .title{font-family:Georgia, 'Times New Roman', serif;font-size:74px;fill:#241a16;font-weight:700}
+      .subtitle{font-family:Arial, sans-serif;font-size:30px;fill:#74665c;font-weight:600}
+      .label{font-family:Georgia, 'Times New Roman', serif;font-size:42px;fill:#241a16;font-weight:700}
+      .small{font-family:Arial, sans-serif;font-size:27px;fill:#2d2520;font-weight:800}
+      .note{font-family:Arial, sans-serif;font-size:23px;fill:#6e6157;font-weight:600}
+      .mini{font-family:Arial, sans-serif;font-size:21px;fill:#76675c;font-weight:700}
+      .arrow{stroke:#b9906c;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1328" cy="170" r="150" fill="#fff8ef" opacity="0.68"/>
+  <circle cx="180" cy="835" r="160" fill="#c95f32" opacity="0.10"/>
+  <g transform="translate(105 92)">
+    <text class="kicker" x="0" y="0">OFFLINE BACKUP</text>
+    <text class="title" x="0" y="88">智慧入住不能只靠雲端</text>
+    <text class="subtitle" x="2" y="145">雲端負責管理，現場負責關鍵執行；旅客抵達時，流程不能因為網路抖動就停下。</text>
+  </g>
+  <g transform="translate(105 255)" filter="url(#shadow)">
+    <rect x="0" y="0" width="635" height="585" rx="46" fill="url(#cloud)" stroke="#cfdce3" stroke-width="3"/>
+    <text class="kicker" x="52" y="72">CLOUD LAYER</text>
+    <text class="label" x="52" y="132">雲端管理層</text>
+    <text class="note" x="54" y="178">適合做跨場域設定、同步、報表與規則管理。</text>
+    <g transform="translate(52 225)">
+      <rect x="0" y="0" width="235" height="88" rx="24" fill="#fffaf3"/>
+      <circle cx="43" cy="44" r="24" fill="#6d8794"/>
+      <text class="small" x="82" y="38">PMS 同步</text>
+      <text class="mini" x="82" y="68">訂單 / 房況 / 狀態</text>
+      <rect x="290" y="0" width="235" height="88" rx="24" fill="#fffaf3"/>
+      <circle cx="333" cy="44" r="24" fill="#6d8794"/>
+      <text class="small" x="372" y="38">後台設定</text>
+      <text class="mini" x="372" y="68">規則 / 權限模板</text>
+      <rect x="0" y="126" width="235" height="88" rx="24" fill="#fffaf3"/>
+      <circle cx="43" cy="170" r="24" fill="#6d8794"/>
+      <text class="small" x="82" y="164">報表稽核</text>
+      <text class="mini" x="82" y="194">紀錄 / 異常 / 追蹤</text>
+      <rect x="290" y="126" width="235" height="88" rx="24" fill="#fffaf3"/>
+      <circle cx="333" cy="170" r="24" fill="#6d8794"/>
+      <text class="small" x="372" y="164">恢復同步</text>
+      <text class="mini" x="372" y="194">離線紀錄回寫</text>
+    </g>
+    <path d="M160 505 C225 460 310 460 375 505 S510 550 575 505" stroke="#6d8794" stroke-width="8" fill="none" opacity="0.45"/>
+    <text class="note" x="52" y="535">雲端很好用，但不該承擔每一次開門的即時判斷。</text>
+  </g>
+  <g transform="translate(860 255)" filter="url(#shadow)">
+    <rect x="0" y="0" width="635" height="585" rx="46" fill="url(#edge)" stroke="#dfd2c3" stroke-width="3"/>
+    <text class="kicker" x="52" y="72">EDGE LAYER</text>
+    <text class="label" x="52" y="132">現場邊緣執行層</text>
+    <text class="note" x="54" y="178">適合做抵達當下的驗證、發卡、門禁與降級模式。</text>
+    <g transform="translate(52 225)">
+      <rect x="0" y="0" width="235" height="88" rx="24" fill="#2b201b"/>
+      <circle cx="43" cy="44" r="24" fill="#d66a34"/>
+      <text class="small" x="82" y="38" fill="#fffaf3">Kiosk 驗證</text>
+      <text class="mini" x="82" y="68" fill="#e9d8c7">訂單 / 身份 / 狀態</text>
+      <rect x="290" y="0" width="235" height="88" rx="24" fill="#e7efe5"/>
+      <circle cx="333" cy="44" r="24" fill="#748864"/>
+      <text class="small" x="372" y="38">發卡寫入</text>
+      <text class="mini" x="372" y="68">NFC / QR / Wallet</text>
+      <rect x="0" y="126" width="235" height="88" rx="24" fill="#e7efe5"/>
+      <circle cx="43" cy="170" r="24" fill="#748864"/>
+      <text class="small" x="82" y="164">門禁判斷</text>
+      <text class="mini" x="82" y="194">區域 / 時段 / 撤回</text>
+      <rect x="290" y="126" width="235" height="88" rx="24" fill="#f1dbc2"/>
+      <circle cx="333" cy="170" r="24" fill="#d66a34"/>
+      <text class="small" x="372" y="164">離線紀錄</text>
+      <text class="mini" x="372" y="194">成功 / 失敗 / 人工</text>
+    </g>
+    <rect x="52" y="468" width="525" height="64" rx="22" fill="#fffaf3"/>
+    <text class="small" x="82" y="509">受限模式：只處理已授權且低風險任務</text>
+  </g>
+  <g transform="translate(740 500)">
+    <path class="arrow" d="M0 0 C50 -42 70 -42 120 0"/>
+    <path class="arrow" d="M120 72 C70 114 50 114 0 72"/>
+    <path d="M112 -6 L136 0 L112 14" fill="#b9906c"/>
+    <path d="M8 78 L-16 72 L8 58" fill="#b9906c"/>
+    <text class="mini" x="-18" y="-42">同步設定</text>
+    <text class="mini" x="-22" y="142">回寫紀錄</text>
+  </g>
+  <text class="note" x="105" y="930">圖片來源：Cellbedell / 智慧入住雲端與邊緣分工示意圖</text>
+</svg>
