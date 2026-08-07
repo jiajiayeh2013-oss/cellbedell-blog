@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent 門禁權限治理示意圖</title>
+  <desc id="desc">AI Agent 把自然語言需求轉成門禁任務，經過規則、審核、邊緣設備執行與稽核紀錄。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbf5ec"/><stop offset="1" stop-color="#dcc6ab"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#4c3429" flood-opacity="0.18"/></filter>
+    <style>
+      .k{font-family:Arial,sans-serif;font-size:32px;letter-spacing:13px;fill:#c65f32;font-weight:800}.t{font-family:Georgia,serif;font-size:72px;fill:#241a16;font-weight:800}.s{font-family:Arial,sans-serif;font-size:30px;fill:#6f6258;font-weight:650}.h{font-family:Georgia,serif;font-size:40px;fill:#241a16;font-weight:800}.p{font-family:Arial,sans-serif;font-size:25px;fill:#2d2520;font-weight:800}.n{font-family:Arial,sans-serif;font-size:22px;fill:#74675d;font-weight:650}.w{fill:#fffaf3}.g{fill:#e5efe6}.o{fill:#f1dbc2}.d{fill:#2b201b}.a{stroke:#b9906c;stroke-width:8;stroke-linecap:round;fill:none}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/><circle cx="1320" cy="165" r="150" fill="#fff7ee" opacity=".68"/><circle cx="190" cy="830" r="160" fill="#c65f32" opacity=".11"/>
+  <g transform="translate(105 92)"><text class="k" y="0">AI ACCESS GOVERNANCE</text><text class="t" y="88">Agent 不直接開門，它建立任務</text><text class="s" y="145">自然語言只是入口；權限要經過規則、審核、執行與撤回紀錄。</text></g>
+  <g transform="translate(105 270)" filter="url(#shadow)">
+    <rect width="1390" height="560" rx="46" class="w" stroke="#dfd2c3" stroke-width="3"/>
+    <g transform="translate(62 68)">
+      <rect width="300" height="390" rx="34" class="d"/><text class="k" x="38" y="60" fill="#f4c65b">REQUEST</text><text class="h" x="38" y="126" fill="#fffaf3">一句話</text><text class="n" x="38" y="185" fill="#eadbcb">「幫 303 房客加開</text><text class="n" x="38" y="220" fill="#eadbcb">今晚有效的門禁」</text><rect x="54" y="278" width="190" height="62" rx="18" fill="#fffaf3"/><text class="p" x="82" y="318">自然語言</text>
+    </g>
+    <path class="a" d="M400 265h95"/><path d="M493 250l30 15-30 15" fill="#b9906c"/>
+    <g transform="translate(535 68)">
+      <rect width="300" height="390" rx="34" class="g"/><text class="k" x="38" y="60">TASK CARD</text><text class="h" x="38" y="126">任務卡</text><text class="n" x="38" y="185">房號、身份、時段、</text><text class="n" x="38" y="220">區域、原因與風險。</text><circle cx="84" cy="303" r="38" fill="#748864"/><text class="p" x="133" y="313">結構化</text>
+    </g>
+    <path class="a" d="M872 265h95"/><path d="M965 250l30 15-30 15" fill="#b9906c"/>
+    <g transform="translate(1005 68)">
+      <rect width="320" height="390" rx="34" class="o"/><text class="k" x="38" y="60">CONTROL</text><text class="h" x="38" y="126">規則與審核</text><text class="n" x="38" y="185">PMS 狀態、權限模板、</text><text class="n" x="38" y="220">真人確認、撤回條件。</text><rect x="40" y="276" width="240" height="66" rx="20" fill="#fffaf3"/><text class="p" x="76" y="318">可執行 / 可拒絕</text>
+    </g>
+  </g>
+  <g transform="translate(245 860)"><text class="n">執行由邊緣設備與門禁系統完成；Agent 留下可查詢、可撤回、可稽核的紀錄。</text></g>
+</svg>
