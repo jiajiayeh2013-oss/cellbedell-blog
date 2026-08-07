@@ -3,7 +3,7 @@ status: Published
 locale: zh-Hant
 translation_key: 2026-08-12-member-wallet-hospitality-crm
 date: 2026-08-12
-scheduled_publish_at: 2026-08-12T09:00:00+08:00
+scheduled_publish_at: 2026-08-07T16:00:00+08:00
 owner: ""
 series_order: 17
 series: 旅館生活科技

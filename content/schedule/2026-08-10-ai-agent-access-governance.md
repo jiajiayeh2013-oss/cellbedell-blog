@@ -1,7 +1,7 @@
 ---
 status: Published
 date: 2026-08-10
-scheduled_publish_at: 2026-08-10T09:00:00+08:00
+scheduled_publish_at: 2026-08-07T16:00:00+08:00
 series: 旅館生活科技
 title: AI Agent 管理門禁權限進階篇：審核、撤回與稽核紀錄要怎麼設計？
 topic: AI Agent 門禁權限治理

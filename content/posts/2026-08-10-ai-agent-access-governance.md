@@ -3,7 +3,7 @@ status: Published
 locale: zh-Hant
 translation_key: 2026-08-10-ai-agent-access-governance
 date: 2026-08-10
-scheduled_publish_at: 2026-08-10T09:00:00+08:00
+scheduled_publish_at: 2026-08-07T16:00:00+08:00
 owner: ""
 series_order: 16
 series: 旅館生活科技

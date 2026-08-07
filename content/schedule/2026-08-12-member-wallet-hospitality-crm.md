@@ -1,7 +1,7 @@
 ---
 status: Published
 date: 2026-08-12
-scheduled_publish_at: 2026-08-12T09:00:00+08:00
+scheduled_publish_at: 2026-08-07T16:00:00+08:00
 series: 旅館生活科技
 title: 會員 Wallet 與旅宿 CRM：房卡、優惠與回訪如何放進同一段旅程？
 topic: 會員 Wallet 與 CRM 旅客旅程

@@ -1,7 +1,7 @@
 ---
 status: Published
 date: 2026-08-14
-scheduled_publish_at: 2026-08-14T09:00:00+08:00
+scheduled_publish_at: 2026-08-07T16:00:00+08:00
 series: 旅館生活科技
 title: 智慧入住導入成本拆解：中小旅宿哪些先做、哪些可以晚一點？
 topic: 智慧入住導入成本與分階段策略
