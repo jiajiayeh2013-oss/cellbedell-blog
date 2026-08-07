@@ -1,14 +1,79 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">智慧入住導入成本拆解</title>
-  <desc id="desc">以三階段方式拆解中小旅宿導入智慧入住的成本：先跑流程、再接門禁、最後加上 AI 與會員服務。</desc>
-  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbf5ec"/><stop offset="1" stop-color="#dbc6ab"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#4c3429" flood-opacity="0.18"/></filter><style>.k{font-family:Arial,sans-serif;font-size:32px;letter-spacing:13px;fill:#c65f32;font-weight:800}.t{font-family:Georgia,serif;font-size:72px;fill:#241a16;font-weight:800}.s{font-family:Arial,sans-serif;font-size:30px;fill:#6f6258;font-weight:650}.h{font-family:Georgia,serif;font-size:38px;fill:#241a16;font-weight:800}.p{font-family:Arial,sans-serif;font-size:25px;fill:#2d2520;font-weight:800}.n{font-family:Arial,sans-serif;font-size:22px;fill:#74675d;font-weight:650}.num{font-family:Arial,sans-serif;font-size:34px;fill:#fff;font-weight:900}</style></defs>
-  <rect width="1600" height="1000" fill="url(#bg)"/><circle cx="1335" cy="160" r="155" fill="#fff7ee" opacity=".68"/><circle cx="180" cy="825" r="165" fill="#c65f32" opacity=".1"/>
-  <g transform="translate(105 92)"><text class="k" y="0">IMPLEMENTATION COST</text><text class="t" y="88">智慧入住成本，不只是一台 Kiosk</text><text class="s" y="145">中小旅宿更該問：哪些先做能減壓？哪些可以等流程穩了再加？</text></g>
-  <g transform="translate(105 270)" filter="url(#shadow)">
-    <rect width="1390" height="560" rx="46" fill="#fffaf3" stroke="#dfd2c3" stroke-width="3"/>
-    <g transform="translate(65 76)"><rect width="375" height="405" rx="36" fill="#e5efe6"/><circle cx="70" cy="72" r="34" fill="#748864"/><text class="num" x="60" y="84">1</text><text class="h" x="38" y="145">先跑流程</text><text class="n" x="38" y="200">PMS API、pre check-in、</text><text class="n" x="38" y="235">Kiosk 驗證與櫃台 SOP。</text><text class="p" x="38" y="318">低改造，高減壓</text></g>
-    <g transform="translate(508 76)"><rect width="375" height="405" rx="36" fill="#f1dbc2"/><circle cx="70" cy="72" r="34" fill="#d66a34"/><text class="num" x="60" y="84">2</text><text class="h" x="38" y="145">再接門禁</text><text class="n" x="38" y="200">發卡機、QR / Wallet、</text><text class="n" x="38" y="235">邊緣設備與斷網備援。</text><text class="p" x="38" y="318">中等改造，穩定體驗</text></g>
-    <g transform="translate(951 76)"><rect width="375" height="405" rx="36" fill="#2b201b"/><circle cx="70" cy="72" r="34" fill="#c65f32"/><text class="num" x="60" y="84">3</text><text class="h" x="38" y="145" fill="#fffaf3">最後加值</text><text class="n" x="38" y="200" fill="#eadbcb">AI Agent、會員 Wallet、</text><text class="n" x="38" y="235" fill="#eadbcb">CRM 與跨場域服務。</text><text class="p" x="38" y="318" fill="#fffaf3">高價值，需資料成熟</text></g>
+  <title id="title">智慧入住導入成本拆解主圖</title>
+  <desc id="desc">以三層旅宿場景圖呈現智慧入住導入成本：核心流程、現場設備、進階服務。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf5ec"/>
+      <stop offset="0.6" stop-color="#eadbc7"/>
+      <stop offset="1" stop-color="#d3b18b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#3f2a20" flood-opacity="0.18"/>
+    </filter>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2" fill="#cdbca7" opacity="0.45"/>
+    </pattern>
+    <style>
+      .k{font-family:Arial,sans-serif;font-size:30px;letter-spacing:14px;fill:#c65f32;font-weight:800}
+      .title{font-family:Georgia,serif;font-size:74px;fill:#241a16;font-weight:800}
+      .dek{font-family:Arial,sans-serif;font-size:29px;fill:#6f6258;font-weight:650}
+      .h{font-family:Georgia,serif;font-size:40px;fill:#241a16;font-weight:800}
+      .p{font-family:Arial,sans-serif;font-size:24px;fill:#342821;font-weight:800}
+      .small{font-family:Arial,sans-serif;font-size:20px;fill:#786b61;font-weight:650}
+      .num{font-family:Arial,sans-serif;font-size:34px;fill:#fffaf3;font-weight:900}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#dots)" opacity="0.55"/>
+  <circle cx="1342" cy="174" r="168" fill="#fff8ef" opacity="0.72"/>
+  <circle cx="206" cy="830" r="168" fill="#c65f32" opacity="0.11"/>
+
+  <g transform="translate(105 96)">
+    <text class="k" y="0">SMART CHECK-IN COST</text>
+    <text class="title" y="92">導入成本，要照旅客旅程拆開看</text>
+    <text class="dek" y="150">不要只問 Kiosk 多少錢；先看哪一段流程最能減少等待、錯誤與重複人工。</text>
   </g>
-  <text class="n" x="105" y="930">圖片來源：Cellbedell / 智慧入住導入成本三階段示意圖</text>
+
+  <g transform="translate(108 264)" filter="url(#shadow)">
+    <rect width="1384" height="586" rx="54" fill="#fffaf3" stroke="#decfbd" stroke-width="3"/>
+    <g transform="translate(76 78)">
+      <rect width="360" height="428" rx="42" fill="#e5efe6"/>
+      <circle cx="72" cy="72" r="38" fill="#748864"/>
+      <text class="num" x="62" y="85">1</text>
+      <text class="h" x="42" y="150">核心入住線</text>
+      <text class="small" x="42" y="204">PMS API / pre check-in</text>
+      <text class="small" x="42" y="238">付款狀態 / Kiosk 驗證</text>
+      <text class="small" x="42" y="272">入住回寫 / 櫃台 SOP</text>
+      <rect x="42" y="330" width="250" height="58" rx="20" fill="#fffaf3"/>
+      <text class="p" x="70" y="367">先把流程跑起來</text>
+    </g>
+    <g transform="translate(512 78)">
+      <rect width="360" height="428" rx="42" fill="#f1dbc2"/>
+      <circle cx="72" cy="72" r="38" fill="#d66a34"/>
+      <text class="num" x="62" y="85">2</text>
+      <text class="h" x="42" y="150">現場執行層</text>
+      <text class="small" x="42" y="204">發卡機 / QR / Wallet</text>
+      <text class="small" x="42" y="238">門禁讀頭 / 邊緣驗證</text>
+      <text class="small" x="42" y="272">短暫斷網受限模式</text>
+      <rect x="42" y="330" width="250" height="58" rx="20" fill="#fffaf3"/>
+      <text class="p" x="70" y="367">再讓現場穩定</text>
+    </g>
+    <g transform="translate(948 78)">
+      <rect width="360" height="428" rx="42" fill="#2b201b"/>
+      <circle cx="72" cy="72" r="38" fill="#c65f32"/>
+      <text class="num" x="62" y="85">3</text>
+      <text class="h" x="42" y="150" fill="#fffaf3">服務加值層</text>
+      <text class="small" x="42" y="204" fill="#eadbcb">AI Agent / 例外派工</text>
+      <text class="small" x="42" y="238" fill="#eadbcb">會員 Wallet / CRM</text>
+      <text class="small" x="42" y="272" fill="#eadbcb">回訪、加購與跨場域服務</text>
+      <rect x="42" y="330" width="250" height="58" rx="20" fill="#fffaf3"/>
+      <text class="p" x="70" y="367">最後做品牌經營</text>
+    </g>
+    <path d="M452 292h42" stroke="#b9906c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M486 272l34 20-34 20" fill="#b9906c"/>
+    <path d="M888 292h42" stroke="#b9906c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M922 272l34 20-34 20" fill="#b9906c"/>
+  </g>
+
+  <text class="small" x="112" y="920">圖片來源：Cellbedell / 智慧入住導入成本分層概念圖</text>
 </svg>
