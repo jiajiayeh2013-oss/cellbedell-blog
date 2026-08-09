@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">智慧建築與 Cellbedell 空間作業系統概念圖</title>
+  <desc id="desc">以商辦大樓、手機 Wallet、訪客 Kiosk、邊緣設備與 AI Agent 任務卡，呈現 Cellbedell 可延伸到智慧建築的能力。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf5ec"/>
+      <stop offset="0.58" stop-color="#eadbc7"/>
+      <stop offset="1" stop-color="#d4b38e"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7efe6"/>
+      <stop offset="1" stop-color="#b8c8b3"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35271f"/>
+      <stop offset="1" stop-color="#17110e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#3f2a20" flood-opacity="0.18"/>
+    </filter>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#d5c6b5" stroke-width="1.3" opacity="0.42"/>
+    </pattern>
+    <style>
+      .k{font-family:Arial,sans-serif;font-size:30px;letter-spacing:14px;fill:#c65f32;font-weight:800}
+      .title{font-family:Georgia,serif;font-size:74px;fill:#241a16;font-weight:800}
+      .dek{font-family:Arial,sans-serif;font-size:29px;fill:#6f6258;font-weight:650}
+      .h{font-family:Georgia,serif;font-size:38px;fill:#241a16;font-weight:800}
+      .p{font-family:Arial,sans-serif;font-size:24px;fill:#342821;font-weight:800}
+      .small{font-family:Arial,sans-serif;font-size:20px;fill:#786b61;font-weight:650}
+      .white{fill:#fffaf3}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)" opacity="0.35"/>
+  <circle cx="1338" cy="172" r="170" fill="#fff8ef" opacity="0.72"/>
+  <circle cx="206" cy="830" r="168" fill="#c65f32" opacity="0.11"/>
+
+  <g transform="translate(105 96)">
+    <text class="k" y="0">SMART BUILDING ACCESS OS</text>
+    <text class="title" y="92">從開門到營運，智慧建築需要任務層</text>
+    <text class="dek" y="150">Cellbedell 可把 Wallet、Kiosk、門禁、邊緣設備與 AI Agent 接成空間作業系統。</text>
+  </g>
+
+  <g transform="translate(110 260)" filter="url(#shadow)">
+    <rect width="1380" height="590" rx="54" fill="#fffaf3" stroke="#decfbd" stroke-width="3"/>
+
+    <g transform="translate(72 72)">
+      <rect width="320" height="438" rx="42" fill="url(#tower)"/>
+      <rect x="94" y="62" width="132" height="280" rx="18" fill="#fffaf3" opacity="0.9"/>
+      <g fill="#748864" opacity="0.85">
+        <rect x="122" y="96" width="28" height="26" rx="6"/><rect x="170" y="96" width="28" height="26" rx="6"/>
+        <rect x="122" y="146" width="28" height="26" rx="6"/><rect x="170" y="146" width="28" height="26" rx="6"/>
+        <rect x="122" y="196" width="28" height="26" rx="6"/><rect x="170" y="196" width="28" height="26" rx="6"/>
+        <rect x="122" y="246" width="28" height="26" rx="6"/><rect x="170" y="246" width="28" height="26" rx="6"/>
+      </g>
+      <rect x="124" y="318" width="72" height="24" rx="10" fill="#2b201b"/>
+      <text class="h" x="42" y="392">智慧建築</text>
+      <text class="small" x="42" y="430">商辦、旅宿、場館、共享空間</text>
+    </g>
+
+    <g transform="translate(470 74)">
+      <rect width="360" height="436" rx="42" fill="url(#dark)"/>
+      <text class="k" x="40" y="64" font-size="24">CELLBEDELL LAYER</text>
+      <text class="h" x="40" y="126" fill="#fffaf3">空間作業層</text>
+      <g transform="translate(40 174)">
+        <rect width="278" height="58" rx="18" fill="#fffaf3"/>
+        <text class="p" x="24" y="37">Wallet / QR / NFC</text>
+        <rect y="78" width="278" height="58" rx="18" fill="#e5efe6"/>
+        <text class="p" x="24" y="115">Kiosk 自助報到</text>
+        <rect y="156" width="278" height="58" rx="18" fill="#f1dbc2"/>
+        <text class="p" x="24" y="193">邊緣驗證與備援</text>
+      </g>
+    </g>
+
+    <g transform="translate(908 74)">
+      <rect width="370" height="436" rx="42" fill="#f7efe6"/>
+      <text class="k" x="42" y="64" font-size="24">AI TASKS</text>
+      <text class="h" x="42" y="126">把請求變任務</text>
+      <g transform="translate(42 172)">
+        <circle cx="32" cy="32" r="32" fill="#d66a34"/>
+        <path d="M32 15v34M15 32h34" stroke="#fffaf3" stroke-width="8" stroke-linecap="round"/>
+        <text class="p" x="84" y="27">訪客權限</text>
+        <text class="small" x="84" y="58">預註冊 / 到期失效</text>
+        <circle cx="32" cy="132" r="32" fill="#748864"/>
+        <path d="M18 132l10 12 22-25" fill="none" stroke="#fffaf3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="p" x="84" y="127">空間服務</text>
+        <text class="small" x="84" y="158">會議室 / 停車 / 電梯</text>
+        <circle cx="32" cy="232" r="32" fill="#2b201b"/>
+        <path d="M16 220h32M16 235h50M16 250h24" stroke="#fffaf3" stroke-width="7" stroke-linecap="round"/>
+        <text class="p" x="84" y="227">稽核紀錄</text>
+        <text class="small" x="84" y="258">誰、何時、哪個區域</text>
+      </g>
+    </g>
+
+    <path d="M410 292h42" stroke="#b9906c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M444 272l34 20-34 20" fill="#b9906c"/>
+    <path d="M848 292h42" stroke="#b9906c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M882 272l34 20-34 20" fill="#b9906c"/>
+  </g>
+
+  <text class="small" x="112" y="920">圖片來源：Cellbedell / 智慧建築空間作業系統概念圖</text>
+</svg>
