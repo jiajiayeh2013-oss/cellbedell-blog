@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">智慧建築訪客管理檢查清單概念圖</title>
+  <desc id="desc">智慧建築訪客從預註冊、Kiosk 報到、臨時憑證、樓層權限到離場失效與稽核紀錄的流程。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf4ea"/>
+      <stop offset="0.56" stop-color="#eadbc7"/>
+      <stop offset="1" stop-color="#d3b18d"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#382920"/>
+      <stop offset="1" stop-color="#15100d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#3f2a20" flood-opacity="0.18"/>
+    </filter>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#d7c8b5" stroke-width="1.2" opacity="0.42"/>
+    </pattern>
+    <style>
+      .k{font-family:Arial,sans-serif;font-size:30px;letter-spacing:14px;fill:#c65f32;font-weight:800}
+      .title{font-family:Georgia,serif;font-size:74px;fill:#241a16;font-weight:800}
+      .dek{font-family:Arial,sans-serif;font-size:29px;fill:#6f6258;font-weight:650}
+      .h{font-family:Georgia,serif;font-size:38px;fill:#241a16;font-weight:800}
+      .hlight{font-family:Georgia,serif;font-size:40px;fill:#fffaf3;font-weight:800}
+      .p{font-family:Arial,sans-serif;font-size:23px;fill:#342821;font-weight:800}
+      .plight{font-family:Arial,sans-serif;font-size:23px;fill:#fffaf3;font-weight:800}
+      .small{font-family:Arial,sans-serif;font-size:19px;fill:#786b61;font-weight:650}
+      .smallLight{font-family:Arial,sans-serif;font-size:19px;fill:#eadbcb;font-weight:650}
+      .micro{font-family:Arial,sans-serif;font-size:17px;letter-spacing:4px;font-weight:800}
+      .line{stroke:#b9906c;stroke-width:8;stroke-linecap:round;fill:none}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)" opacity="0.32"/>
+  <circle cx="1346" cy="168" r="168" fill="#fff8ef" opacity="0.72"/>
+  <circle cx="198" cy="828" r="176" fill="#c65f32" opacity="0.11"/>
+
+  <g transform="translate(105 96)">
+    <text class="k" y="0">VISITOR MANAGEMENT CHECKLIST</text>
+    <text class="title" y="92">訪客管理，不是大廳登記而已</text>
+    <text class="dek" y="150">智慧建築要把預約、報到、臨時權限、離場失效與稽核接成一條任務線。</text>
+  </g>
+
+  <g transform="translate(105 258)" filter="url(#shadow)">
+    <rect width="1390" height="592" rx="56" fill="#fffaf3" stroke="#decfbd" stroke-width="3"/>
+
+    <g transform="translate(68 66)">
+      <rect width="342" height="460" rx="42" fill="url(#dark)"/>
+      <text class="micro" x="42" y="58" fill="#f3c85e">LOBBY MOMENT</text>
+      <text class="hlight" x="42" y="120">訪客抵達</text>
+      <text class="smallLight" x="42" y="170">過去是換證、電話通知與人工登記。</text>
+      <text class="smallLight" x="42" y="202">現在應該變成可驗證、可發放、可撤回的任務。</text>
+      <rect x="54" y="278" width="110" height="134" rx="26" fill="#fffaf3"/>
+      <rect x="178" y="278" width="110" height="134" rx="26" fill="#e5efe6"/>
+      <circle cx="109" cy="380" r="14" fill="#2b201b"/>
+      <rect x="205" y="314" width="58" height="48" rx="10" fill="#748864"/>
+      <text class="plight" x="54" y="250">Kiosk + Wallet</text>
+    </g>
+
+    <g transform="translate(468 66)">
+      <rect width="438" height="460" rx="42" fill="#f7efe6"/>
+      <text class="micro" x="42" y="58" fill="#c65f32">CELLBEDELL TASK LINE</text>
+      <text class="h" x="42" y="120">6 個訪客任務</text>
+      <g transform="translate(42 166)">
+        <rect width="354" height="54" rx="18" fill="#fffaf3"/>
+        <text class="p" x="22" y="35">1 預註冊：姓名、公司、接待人</text>
+        <rect y="66" width="354" height="54" rx="18" fill="#e5efe6"/>
+        <text class="p" x="22" y="101">2 到場驗證：Kiosk / QR / 手機</text>
+        <rect y="132" width="354" height="54" rx="18" fill="#f1dbc2"/>
+        <text class="p" x="22" y="167">3 通知接待：host notification</text>
+        <rect y="198" width="354" height="54" rx="18" fill="#fffaf3"/>
+        <text class="p" x="22" y="233">4 臨時憑證：Wallet / QR / NFC</text>
+        <rect y="264" width="354" height="54" rx="18" fill="#e5efe6"/>
+        <text class="p" x="22" y="299">5 區域權限：樓層 / 會議室 / 電梯</text>
+      </g>
+    </g>
+
+    <g transform="translate(966 66)">
+      <rect width="334" height="460" rx="42" fill="#e5efe6"/>
+      <text class="micro" x="42" y="58" fill="#c65f32">CLOSE THE LOOP</text>
+      <text class="h" x="42" y="120">離場失效</text>
+      <text class="small" x="42" y="166">訪客權限不只要能發放，</text>
+      <text class="small" x="42" y="198">也要能到期、撤回、回寫。</text>
+      <g transform="translate(58 250)">
+        <circle cx="44" cy="44" r="44" fill="#748864"/>
+        <path d="M25 44l14 14 27-34" fill="none" stroke="#fffaf3" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="112" y="8" width="130" height="72" rx="22" fill="#fffaf3"/>
+        <text class="p" x="137" y="40">稽核</text>
+        <text class="small" x="128" y="66">誰 / 何時 / 哪裡</text>
+      </g>
+      <rect x="54" y="374" width="224" height="50" rx="18" fill="#2b201b"/>
+      <text class="plight" x="84" y="407">自動失效與撤回</text>
+    </g>
+
+    <path class="line" d="M410 296h48"/>
+    <path d="M450 276l34 20-34 20" fill="#b9906c"/>
+    <path class="line" d="M906 296h48"/>
+    <path d="M946 276l34 20-34 20" fill="#b9906c"/>
+  </g>
+
+  <g transform="translate(158 878)">
+    <rect width="1284" height="60" rx="24" fill="#fffaf3" opacity="0.84"/>
+    <text class="small" x="34" y="38">圖片來源：Cellbedell / 智慧建築訪客管理檢查清單概念圖</text>
+  </g>
+</svg>
