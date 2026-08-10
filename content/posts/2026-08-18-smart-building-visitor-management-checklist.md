@@ -19,9 +19,9 @@ tags:
   - Kiosk
   - Wallet
   - 門禁權限
-hero_image: /assets/2026-08-18-smart-building-visitor-management-checklist.svg
-hero_image_alt: 智慧建築訪客管理從預註冊、Kiosk 報到、臨時憑證、區域權限到離場稽核的任務線
-hero_image_credit: Cellbedell / 智慧建築訪客管理檢查清單概念圖
+hero_image: /assets/2026-08-18-visitor-management-before-after.png
+hero_image_alt: 大樓訪客管理 before after 圖，對比傳統人工登記與智慧訪客管理流程
+hero_image_credit: Cellbedell / 大樓訪客管理 Before & After 圖
 summary: 智慧建築的訪客管理不應停在大廳登記。真正有價值的系統，是讓每一次訪客進出都能預註冊、驗證、發放臨時憑證、限制區域、到期失效並留下稽核紀錄。
 next_direction: Wallet 憑證如何進入商辦與場館, AI Agent 如何管理智慧建築服務任務, 智慧建築邊緣驗證與斷網備援
 sources:
