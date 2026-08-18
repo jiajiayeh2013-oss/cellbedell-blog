@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">智慧建築臨時權限生命週期</title>
+  <desc id="desc">臨時權限從申請、審核、發放、使用、紀錄到失效的完整流程。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7efe3"/>
+      <stop offset=".5" stop-color="#fffaf3"/>
+      <stop offset="1" stop-color="#e9f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#4a3125" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1330" cy="140" r="160" fill="#f0d4b9" opacity=".5"/>
+  <text x="90" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#211815">臨時權限要有生命週期</text>
+  <text x="96" y="144" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" letter-spacing="8" fill="#c45f35">REQUEST · APPROVE · ISSUE · USE · EXPIRE</text>
+
+  <g filter="url(#shadow)" font-family="'Helvetica Neue', Arial, sans-serif">
+    <rect x="88" y="225" width="1424" height="430" rx="48" fill="#fffaf3" stroke="#e0d2c1" stroke-width="2"/>
+    <path d="M220 440 H1385" stroke="#bf9062" stroke-width="12" stroke-linecap="round" opacity=".72"/>
+    <g fill="#bf9062">
+      <path d="M392 410 l42 30 -42 30z"/>
+      <path d="M604 410 l42 30 -42 30z"/>
+      <path d="M816 410 l42 30 -42 30z"/>
+      <path d="M1028 410 l42 30 -42 30z"/>
+      <path d="M1240 410 l42 30 -42 30z"/>
+    </g>
+
+    <g font-size="25" font-weight="700" fill="#211815">
+      <rect x="140" y="305" width="190" height="190" rx="36" fill="#e9f0e6"/>
+      <text x="191" y="382">申請</text><text x="170" y="428" font-size="21" font-weight="500">誰要進來</text>
+
+      <rect x="352" y="305" width="190" height="190" rx="36" fill="#f0dcc5"/>
+      <text x="403" y="382">審核</text><text x="383" y="428" font-size="21" font-weight="500">誰能核准</text>
+
+      <rect x="564" y="305" width="190" height="190" rx="36" fill="#e9f0e6"/>
+      <text x="615" y="382">發放</text><text x="581" y="428" font-size="21" font-weight="500">QR / Wallet</text>
+
+      <rect x="776" y="305" width="190" height="190" rx="36" fill="#211815"/>
+      <text x="827" y="382" fill="#fffaf3">使用</text><text x="805" y="428" font-size="21" font-weight="500" fill="#fffaf3">門禁 / 電梯</text>
+
+      <rect x="988" y="305" width="190" height="190" rx="36" fill="#f0dcc5"/>
+      <text x="1039" y="382">紀錄</text><text x="1017" y="428" font-size="21" font-weight="500">誰何時進出</text>
+
+      <rect x="1200" y="305" width="190" height="190" rx="36" fill="#e9f0e6"/>
+      <text x="1251" y="382">失效</text><text x="1230" y="428" font-size="21" font-weight="500">到期 / 撤回</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="265" y="705" width="1070" height="76" rx="30" fill="#211815"/>
+    <text x="330" y="753" font-family="'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#fffaf3">臨時權限不是發出去就結束；真正重要的是何時失效，以及是否能回查。</text>
+  </g>
+  <text x="92" y="840" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#6b5d53">Source: Cellbedell / 智慧建築臨時權限生命週期概念圖</text>
+</svg>

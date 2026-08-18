@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">智慧建築身份類型與通行範圍</title>
+  <desc id="desc">不同身份對應不同通行範圍：員工、訪客、廠商、會員、活動人員不共用同一套權限。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff8ee"/>
+      <stop offset=".55" stop-color="#f4eadc"/>
+      <stop offset="1" stop-color="#eaf2e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#4a3125" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1390" cy="120" r="160" fill="#f0d4b9" opacity=".55"/>
+  <circle cx="150" cy="760" r="180" fill="#c96736" opacity=".12"/>
+  <text x="86" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#211815">不是每個人都該拿同一種權限</text>
+  <text x="92" y="144" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" letter-spacing="8" fill="#c45f35">IDENTITY TYPES × ACCESS SCOPE</text>
+
+  <g filter="url(#shadow)" font-family="'Helvetica Neue', Arial, sans-serif">
+    <rect x="86" y="210" width="1428" height="548" rx="44" fill="#fffaf3" stroke="#e0d2c1" stroke-width="2"/>
+    <g font-size="22" letter-spacing="4" fill="#7b6555">
+      <text x="154" y="282">身份</text><text x="392" y="282">有效時間</text><text x="644" y="282">可通行區域</text><text x="945" y="282">審核</text><text x="1180" y="282">撤回</text>
+    </g>
+    <line x1="130" y1="315" x2="1470" y2="315" stroke="#e1d4c4" stroke-width="2"/>
+
+    <g font-size="28" font-weight="700" fill="#211815">
+      <text x="154" y="377">員工</text>
+      <text x="154" y="462">訪客</text>
+      <text x="154" y="547">廠商</text>
+      <text x="154" y="632">會員</text>
+      <text x="154" y="717">活動人員</text>
+    </g>
+
+    <g font-size="24" fill="#3f332d">
+      <rect x="365" y="340" width="174" height="52" rx="18" fill="#e9f0e6"/><text x="398" y="375">長期有效</text>
+      <rect x="365" y="425" width="174" height="52" rx="18" fill="#f0dcc5"/><text x="389" y="460">會議時段</text>
+      <rect x="365" y="510" width="174" height="52" rx="18" fill="#f6efe7"/><text x="389" y="545">施工窗口</text>
+      <rect x="365" y="595" width="174" height="52" rx="18" fill="#e9f0e6"/><text x="389" y="630">會員期間</text>
+      <rect x="365" y="680" width="174" height="52" rx="18" fill="#f0dcc5"/><text x="389" y="715">活動當日</text>
+
+      <text x="640" y="375">辦公樓層、公共區</text>
+      <text x="640" y="460">大廳、電梯、會議室</text>
+      <text x="640" y="545">後勤區、設備區、停車</text>
+      <text x="640" y="630">共享空間、會員區</text>
+      <text x="640" y="715">入口、後台、指定場域</text>
+
+      <text x="940" y="375">HR / 管理者</text>
+      <text x="940" y="460">接待人</text>
+      <text x="940" y="545">物業 + 負責人</text>
+      <text x="940" y="630">CRM / 會員狀態</text>
+      <text x="940" y="715">活動管理者</text>
+
+      <text x="1180" y="375">離職 / 調職</text>
+      <text x="1180" y="460">會議結束</text>
+      <text x="1180" y="545">任務完成</text>
+      <text x="1180" y="630">會員到期</text>
+      <text x="1180" y="715">活動結束</text>
+    </g>
+  </g>
+  <text x="92" y="830" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#6b5d53">Source: Cellbedell / 智慧建築身份類型與通行範圍概念圖</text>
+</svg>

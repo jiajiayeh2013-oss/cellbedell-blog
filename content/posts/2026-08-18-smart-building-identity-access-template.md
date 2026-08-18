@@ -53,6 +53,8 @@ sources:
 
 BOMA BEST 的 access control 指標提到 mobile credentials、temporary access、selective floor access 與權限到期。這些不是單純功能清單，而是智慧建築必須先建立身份分類的原因。
 
+![智慧建築裡，員工、訪客、廠商、會員與活動人員應對應不同有效時間、通行範圍、審核與撤回規則](/assets/2026-08-18-identity-types-access-scope.svg "Cellbedell / 智慧建築身份類型與通行範圍概念圖")
+
 ## 員工權限：長期有效，但要依角色與樓層分層
 
 員工通常是最穩定的通行者，但不代表權限可以無限制。不同部門、職務、工作地點、樓層與限制區域，都應該對應不同權限模板。
@@ -68,6 +70,8 @@ HID 的 Employee Badge in Apple Wallet 與 Apple Support 的員工證說明都�
 比較好的訪客模板，至少要包含訪客姓名、公司、拜訪時間、接待人、會議室或樓層、有效期限與離場失效。若使用 QR Code、Wallet pass 或 Kiosk 報到，這些欄位也應該回到同一筆訪客紀錄。
 
 Johnson Controls 的 OpenBlue Visitor 將預登記、自助報到、badge、host notification 與 access control integration 放在同一個流程裡。這代表訪客管理不只是前台登記，而是從到訪前就開始建立一條可授權、可通知、可撤回的任務線。
+
+![智慧建築臨時權限從申請、審核、發放、使用、紀錄到失效，應形成完整生命週期](/assets/2026-08-18-access-permission-lifecycle.svg "Cellbedell / 智慧建築臨時權限生命週期概念圖")
 
 ## 廠商與維修人員：最需要審核與稽核
 
@@ -94,6 +98,8 @@ Cellbedell 若要從旅宿走向智慧建築，應該強調的不只是支援 Wa
 這也是 AI Agent 和任務層能發揮價值的地方。使用者可以用自然語言提出需求，例如「明天上午讓水電廠商進 B1 設備間兩小時」，Agent 將需求整理成身份、時間、區域、審核與撤回條件，再由門禁、Kiosk、Wallet、QR Code 或邊緣設備執行。
 
 真正好的智慧建築入口，不是讓所有人使用同一種憑證，而是讓不同身份用最適合的憑證，同時回到同一套可管理、可撤回、可追蹤的權限模板。
+
+![Wallet、QR Code、NFC 卡與 Kiosk 都只是入口，真正執行發生在身份權限層與現場設備之間](/assets/2026-08-18-credential-device-execution-flow.svg "Cellbedell / 智慧建築憑證到現場設備執行流程概念圖")
 
 ## 智慧建築身份權限常見問題
 
